@@ -1,0 +1,1518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0357222C8667E8D23A35DB5EB23D9A2C /* QBAssetsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 786EE96A293167B17A0D42AD7DC97D11 /* QBAssetsViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0399C8AC08DD8711CF7F404D7027C88B /* GONMarkupList.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AD7856DC3F5D1BA26E7A7EEE1DF411 /* GONMarkupList.m */; };
+		03D8D3CF90AD44253F8F6E49A72160FF /* GONMarkupLineBreak.h in Headers */ = {isa = PBXBuildFile; fileRef = 7958796A7255F017B8D984A4B4C6B282 /* GONMarkupLineBreak.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		08D8B43FB40B8A422DB056C43741E0BE /* GONMarkupInc.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CF680EC4695A9370DEB992972D2F05 /* GONMarkupInc.m */; };
+		093DB4198599CE468B738A2331E68BB0 /* GONMarkupParserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 050534BBF05BF50F9EE81EBF66E679F1 /* GONMarkupParserManager.m */; };
+		0E7A507B280FC70A9BA3299A69CBE57B /* GONMarkup.h in Headers */ = {isa = PBXBuildFile; fileRef = A3344D02587E2C99CFB3386033086266 /* GONMarkup.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		10820F1DF2117D2F056BB0BF0B947EB9 /* UILabel+GONMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D06A668AC6C2B05AF9858B9C041C662F /* UILabel+GONMarkupParser.m */; };
+		116583C1EE42315B5CF61C65844D8971 /* QBImagePickerController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD822B31C34F8E3285DB27928A7EEF3 /* QBImagePickerController-dummy.m */; };
+		1780B01AF868FF5E1052D8C69AAB39D9 /* GONMarkup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A66863E77C5F3829DEF5D1940C2B7D2 /* GONMarkup.m */; };
+		1F27FAF13892C31645434DE70BD2F681 /* GONMarkupBold.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC10B3952EDC65918C819A1954DAEAF /* GONMarkupBold.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		209D3F1CF177E46825B7475D3865F66E /* GONMarkupFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC1C153A3056EE4FF2A3262EE2F093A /* GONMarkupFont.m */; };
+		2274F45A958D412E13D285436600B785 /* NSString+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = F391E3CC4CFF3A3C9A2E7AD054D5FC3E /* NSString+Color.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		259287655B90DF3F0742FE24267CDB77 /* GONMarkupListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B0922FA72B98C665F87FCD84849F3EBC /* GONMarkupListItem.m */; };
+		2602196F3C612413FEB643771B3B2605 /* GONMarkupReset.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CEC7A88644C9B263757EAE0E30784C /* GONMarkupReset.m */; };
+		26F593C6BF23266014A94F766F908C5F /* GONMarkupBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF0C44AAE15D161E9CF9343506ECCD0 /* GONMarkupBlock.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2E3541041064DB63609C9FA0F589BF3B /* GONMarkupParagrap.h in Headers */ = {isa = PBXBuildFile; fileRef = 934B16225DE8CA0A7107B2819FAD5FD5 /* GONMarkupParagrap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		31BE97BFDD54F03ED7D69F87FA8D7B78 /* GONMarkupNamedFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 720449316C4885BEA9C79A196F930BAD /* GONMarkupNamedFont.m */; };
+		375F5224D29D8CB5FAA5892CB50CD373 /* GONMarkupBold.m in Sources */ = {isa = PBXBuildFile; fileRef = 768EE20181DCDFD002C3BF5224AABC08 /* GONMarkupBold.m */; };
+		38075CFD75D8236DD26DCA92F189BC7A /* QBSlomoIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A593544185CF2AD0226F281B31C75B7 /* QBSlomoIconView.m */; };
+		3AFC307FB2E040BEB710A462EDD8F272 /* QBSlomoIconView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F841B573C27A74F8EB335EBD9E0375E /* QBSlomoIconView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3BA71D852B9A5D3CF097FF870AF53EFA /* GONMarkupAnchor.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FCB964C5ABE549FC7F9DF58F8114FC /* GONMarkupAnchor.m */; };
+		451D0C9E555C717B5CA05B5ED4AC3E4B /* GONMarkupDec.m in Sources */ = {isa = PBXBuildFile; fileRef = 782485FD1B6CFD9D0065BE9824F6AA1D /* GONMarkupDec.m */; };
+		4AD080211440EC1A1F90AA7D655BCFAD /* GONMarkupInc.h in Headers */ = {isa = PBXBuildFile; fileRef = 71395A65D587822E74AF535A96D07585 /* GONMarkupInc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4BC0DCCAF44339236DB62DC18B43A737 /* QBImagePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18502F44CE471D43EB88D4543232A03 /* QBImagePicker.storyboard */; };
+		4D752DAA83A914F6121E1E4530BBAF6A /* GONMarkupBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFA4BD07C4E6177135308FDABE2784A /* GONMarkupBlock.m */; };
+		54FCF7D89A5940E2E0C880CE07DA162D /* NSString+Color-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CB3CECF970E561EFB5EAB7F8169DEB /* NSString+Color-dummy.m */; };
+		553A326C493A82551173E7CD0DD220BE /* GONMarkupImage.h in Headers */ = {isa = PBXBuildFile; fileRef = F8EE8751CCE7265872D7A0684CCD3624 /* GONMarkupImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55E6512DB14338F908ECE94435BBEE82 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D0259B540CFE1EA91AF75572D44E065D /* zh-Hans.lproj */; };
+		560C696756B9A4EBAE267731C5B073B6 /* GONMarkupSimple.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B2C2A80252ED2DC44DDE480447335C5 /* GONMarkupSimple.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		56316DE74D7D622AFC7B0FCA85500DC9 /* GONMarkupDefaultMarkups.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E8DC786CC01A407A3F8E40621F63114 /* GONMarkupDefaultMarkups.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5710B36BA47A4150785E6131D12A314E /* GONMarkupTextStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E791BF4AAD82B2B50A9078BCB95C29 /* GONMarkupTextStyle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5842DD3DF291B498518E6535F11A4DE5 /* Pods-UVLTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ADF5F694BD4A8E0B9101B3B0624F9AA /* Pods-UVLTests-dummy.m */; };
+		5C225AA3E12661ED48FE31BA2780A92F /* GONMarkupFontTraits.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE130E9B0059D914E62E7C612F6CF90 /* GONMarkupFontTraits.m */; };
+		5CAC31EC3285137B36837FDC5E317C89 /* QBVideoIconView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FE97F6DA8A057504CF2041F101A989F /* QBVideoIconView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		60EC144186A49FD771B20CE041E8A7EA /* GONMarkupItalic.h in Headers */ = {isa = PBXBuildFile; fileRef = 14BE6A9F84923A3846BE21903AD7B964 /* GONMarkupItalic.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		630950D357429C0E26411ABF02BB419E /* GONMarkupDec.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E7E165E490D648E07ADBF0CF027CDE /* GONMarkupDec.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6335F5C5655F4B427C5C97D39C03ACAD /* UIButton+GONMarkupParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FEBAA76099634C33C1677F38FDC1A7 /* UIButton+GONMarkupParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		653BA7A727F1F262CE6C1F8A8F4F568A /* UITextField+GONMarkupParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CABE04086E7B8C385433C51CFF628D8 /* UITextField+GONMarkupParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		65D07DB634627973A6996BA8F30F9A98 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4D17006F9C0B484422BF0B80CBD44A0B /* en.lproj */; };
+		65FFE8C4254AFAC0AB04231E9C27AA91 /* UIButton+GONMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0256DC8969F3DFE09201047EE35B727D /* UIButton+GONMarkupParser.m */; };
+		69047BDCB150A88BB3D491A914C72E37 /* GONMarkupSimple.m in Sources */ = {isa = PBXBuildFile; fileRef = D85C76CD4F7B21FEA9FEE5FA0C5A38F3 /* GONMarkupSimple.m */; };
+		69F40A34B230DFD88C0C02946B3D8395 /* GONMarkupReset.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F5A2DFDC5D2FC034DB07159BB089FD /* GONMarkupReset.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7AF7844F65361DD5BA6B5551A8B8897C /* QBImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CAB4FDBF4A0CB5DE4E7976C4AE038C5 /* QBImagePickerController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		811B3132FC5D94897B4552A8D6456EC4 /* GONMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 762C3541C544F511AA81BB684556A855 /* GONMarkupParser.m */; };
+		822DC6EC73B4E1B7A97810B573B22B61 /* QBCheckmarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F59C0D4FDFACA3EE7B096E66AC5489 /* QBCheckmarkView.m */; };
+		8343BEA8998AF588DFF56E22418EC73B /* QBVideoIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5344F3B79795064E39FB5BDD25C19F42 /* QBVideoIndicatorView.m */; };
+		835F4F916F38100D92721459CCF46947 /* QBCheckmarkView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95971BC1D6064991D41E0707EE19DE7A /* QBCheckmarkView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8464B456808F2737DC8FB0AB85D39053 /* QBVideoIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FD22D4B71316CD903E8449B93A30C3 /* QBVideoIndicatorView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		872AC74AB8962716B9AA071ECA733F17 /* GONMarkupAlignment.h in Headers */ = {isa = PBXBuildFile; fileRef = AB68677D2883631B3A4DD8BF10A4296A /* GONMarkupAlignment.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		89A2F6EE6C9472A2D2E257C7D590DC5C /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B17F85D1CCA476F715A78F640D83E1A6 /* es.lproj */; };
+		8A08DC328ACE9DCEDC11C78F543A8288 /* GONMarkup+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AB4EFCFF361B753D93B2BDF8957C567 /* GONMarkup+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8D791F9A824265FC7E86F9B37095E390 /* GONMarkupParserManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AC9A9CAE07AC4B66E368C13C06B43EA /* GONMarkupParserManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90A778FAE26150F19ACA1F85BF9FA84B /* GONMarkup+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A5DB5DBDCFBB0CEE80A61BD6E23CE6 /* GONMarkup+Private.m */; };
+		915446C07893CE652419DC5455B73B7F /* QBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAFD66C2CBE1C56D05608B2BFA44BA3 /* QBImagePickerController.m */; };
+		93AB071F8CE062992DCF3AA0D896CFDE /* GONMarkupTextStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D7A51045F57247446BAAAA3848E2B9 /* GONMarkupTextStyle.m */; };
+		94BB52E99502116E004655B6AFE9FA60 /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B12EDCC289B8EE9AD0C18F7D038A45A /* NSString+Color.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9801A6703C74253F424C036601CFD8EF /* GONMarkupParser_All.h in Headers */ = {isa = PBXBuildFile; fileRef = 6497EAD48BC56BC8CB1233FC5AC6FCF2 /* GONMarkupParser_All.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9979D7803A4D274B42DDAAEA2517DCE3 /* GONMarkupList.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E4B8AC2DEE145062D6DBA64A7A88E94 /* GONMarkupList.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		99CA73ADF184A5A975D0F04ECDF722FC /* GONMarkupFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 6559BE4E3423494276824F4487BC39CF /* GONMarkupFont.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9CBEF53027468372F4422E39AA7F70E3 /* GONMarkupParserUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2EED65890BBC82121ECD3A4CCF2682 /* GONMarkupParserUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9EC8D9B2E193CE27370ED348B5647FC7 /* GONMarkupColor.h in Headers */ = {isa = PBXBuildFile; fileRef = B918DFAAE5593369BCC559CC83B0179A /* GONMarkupColor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9F65C89D480D15E309F07F283A29D96E /* GONMarkupLineStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0D989FA72EE770C5BF5A81D3652EDA /* GONMarkupLineStyle.m */; };
+		9F73949A6CCDD842885AAD80DD1302AC /* QBAssetCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 80E52B2567F081B01A22A2C28DEF9387 /* QBAssetCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A0DF0B1A061902031C00932024D3E78B /* QBAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D9B12C7F80012731075C404E5E5E71 /* QBAssetsViewController.m */; };
+		A0E74A7A4E7C0C877DFEDF52FE86EBCA /* GONMarkupLineStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 557E0D3B2408D73E9F60D7DCD35E847A /* GONMarkupLineStyle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A4EE53104EB9708051B4F3F772F99257 /* GONMarkupParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A76F3985B83A2F4EC66D52F35BE73C11 /* GONMarkupParser-dummy.m */; };
+		A523C0622A8DF1E463E8BCF47C7E39DA /* GONMarkupNamedColor.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6EA0D0F28B189BD3B1A91D0A87379B /* GONMarkupNamedColor.m */; };
+		A6742E80570715B344E51553F84DB811 /* GONMarkupItalic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D58895DC6A8F8DC006E05F144244923 /* GONMarkupItalic.m */; };
+		AA4A22CC28AC8F13AD58FF1AEF635D5B /* GONMarkupLineBreak.m in Sources */ = {isa = PBXBuildFile; fileRef = D633662EA205841FA307EFC5FF134CBD /* GONMarkupLineBreak.m */; };
+		AA6C1437C9BA375BA8C89BA925491451 /* GONMarkupListItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B114A235F5B0A004CCD15DFCAA363B3 /* GONMarkupListItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB91C816A5D8E59A68C61140A162F495 /* GONMarkupColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B47F14CA72C327BE6935A5B264D2365D /* GONMarkupColor.m */; };
+		B68BEEAB18A3A5E6B4CEE0A4D822971B /* QBAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 125BF8B61C42448772F1791CA13BE26D /* QBAssetCell.m */; };
+		B7596425622392F07E9B141A58872FB0 /* UILabel+GONMarkupParser.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6816BFC314C750601E54205F48A92B /* UILabel+GONMarkupParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BB31253EFA14ABD12FBBCE182AA19620 /* Pods-UVLUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDBE3D9C562F49D6ECD962748A0A6CC /* Pods-UVLUITests-dummy.m */; };
+		CC43CDB4EDB10953C4069B6454212C61 /* GONMarkupFontTraits.h in Headers */ = {isa = PBXBuildFile; fileRef = 0430A11260DD347784F94D0AB8F37F68 /* GONMarkupFontTraits.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CF59E8E54BD71D8C440E2AF088977F45 /* GONMarkupImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E692FF2D4FAB77882FC2C21CD09C4426 /* GONMarkupImage.m */; };
+		D02F0F16C1CD0C96837774278F5E35AF /* UITextField+GONMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A72EA20663303A319E1FF65688656B79 /* UITextField+GONMarkupParser.m */; };
+		D0B0D69AB5B164A3FC533DB2BD25FBC0 /* UITextView+GONMarkupParser.h in Headers */ = {isa = PBXBuildFile; fileRef = DAD4821684ADDE484D4718DFC939874E /* UITextView+GONMarkupParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D2CE4C691DAF201970C99804DFD9B149 /* UITextView+GONMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC180E182D0C943EF7172B1C504A51 /* UITextView+GONMarkupParser.m */; };
+		D454861BF3573067423C1B577AAACE12 /* QBVideoIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1532DAC36556E15A7A62CF7D8DBBD425 /* QBVideoIconView.m */; };
+		D455B14808AD83F1D945BC9E76AB0A02 /* QBAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9803092CCEAB22504A149AE93E9156 /* QBAlbumCell.m */; };
+		D65898BD1761149738086C5CBF91F53E /* QBAlbumCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BC2700AD4463931E5C7AA0D2370D70B /* QBAlbumCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D73B24C1049E92AAD389BB5B61CD891C /* Pods-UVL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B268FE9ED0C6902260EB6474CAF3FD /* Pods-UVL-dummy.m */; };
+		DBE850E30FF21B705313467866F35B35 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 38ABE919B9E78986E411EC88696137D6 /* ja.lproj */; };
+		DDEF09E2A77FEACF161647306DAEF433 /* GONMarkupAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = 328D3E506C850C6514C1EECFD7645577 /* GONMarkupAnchor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E766392CF743B79E3B93BAB485AB49E5 /* GONMarkupAlignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FD3963119A755D4C3305C2982F7519 /* GONMarkupAlignment.m */; };
+		E82EAB9D47729E275668B2216318B929 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 29438FBB64B331D42BCADF95570B9954 /* de.lproj */; };
+		E9160B44211A4A635EBE24069A2B5092 /* GONMarkupParser_Categories.h in Headers */ = {isa = PBXBuildFile; fileRef = A54376DD9F5F5363DD0B80CB5BC0F5AA /* GONMarkupParser_Categories.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F07EFF41F3CB35B1817794179A93BFBB /* QBAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B954876E59C5C65CBAF85CB3058EF5 /* QBAlbumsViewController.m */; };
+		F09B5E5B8E63F649A8CE166712504F9D /* GONMarkupNamedFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 38E852D66A101FBD657F2CD2F1A7EBFD /* GONMarkupNamedFont.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F56A34FD183CAD25BC6D16B75DF99750 /* QBAlbumsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F9ADD586C393D0BC4A5ABE0B958E808 /* QBAlbumsViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F66679363CE7C762539CFEBF27313640 /* GONMarkupParserUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 618A62EC226A5C49ABB9AC07334F2EC3 /* GONMarkupParserUtils.m */; };
+		F7685C7B5B3DB39DD3B4E81D07D79411 /* GONMarkupNamedColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D88645811E31FFC072E2F6099FD500 /* GONMarkupNamedColor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FA3114B50F67FD8A3993E5951A9D06A4 /* GONMarkupParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 3240EB5A1AF3DA545F0EF30EF2D977F8 /* GONMarkupParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB401560BC54BE78F4537B5AFB29F5ED /* GONMarkupParagrap.m in Sources */ = {isa = PBXBuildFile; fileRef = BA469CC747E43024383095DBE595ED26 /* GONMarkupParagrap.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		026C8BB8304D1A287FF56488879CC78E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1274EAC63C7555AB93F5D98C5B296538;
+			remoteInfo = "Pods-UVL";
+		};
+		10CA32B265BB1865A767E991364D934B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C26CBC67ABBE63E1991C42D5CDAE205;
+			remoteInfo = "NSString+Color";
+		};
+		2132143FDC48EF37DB2E06D56D8016A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C26CBC67ABBE63E1991C42D5CDAE205;
+			remoteInfo = "NSString+Color";
+		};
+		5320ADF130BC24ACE804DF5976F28716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAEBAE5C8257AED94B3BED47A0E0E3FA;
+			remoteInfo = "QBImagePickerController-QBImagePicker";
+		};
+		85BC35F480E1DD3019B150EB781EE975 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C49345AFA49B098B0384C4FA864A4868;
+			remoteInfo = QBImagePickerController;
+		};
+		89C06710D26A308C9B2AF371CDF535C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1274EAC63C7555AB93F5D98C5B296538;
+			remoteInfo = "Pods-UVL";
+		};
+		EC818CE87775E7079AE644B200C6036D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0DD1DFD3AA09A39D84E4B1C455E5A93A;
+			remoteInfo = GONMarkupParser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0256DC8969F3DFE09201047EE35B727D /* UIButton+GONMarkupParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+GONMarkupParser.m"; path = "Classes/UIButton+GONMarkupParser.m"; sourceTree = "<group>"; };
+		02FD3963119A755D4C3305C2982F7519 /* GONMarkupAlignment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupAlignment.m; path = Classes/GONMarkupAlignment.m; sourceTree = "<group>"; };
+		0326AAE07E458BEA5E0AAB70A143491B /* libPods-UVLTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-UVLTests.a"; path = "libPods-UVLTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0430A11260DD347784F94D0AB8F37F68 /* GONMarkupFontTraits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupFontTraits.h; path = Classes/GONMarkupFontTraits.h; sourceTree = "<group>"; };
+		050534BBF05BF50F9EE81EBF66E679F1 /* GONMarkupParserManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupParserManager.m; path = Classes/GONMarkupParserManager.m; sourceTree = "<group>"; };
+		05AE409A2D73BFB214071382D65289E0 /* Pods-UVLTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UVLTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0AB4EFCFF361B753D93B2BDF8957C567 /* GONMarkup+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GONMarkup+Private.h"; path = "Classes/GONMarkup+Private.h"; sourceTree = "<group>"; };
+		0E4B8AC2DEE145062D6DBA64A7A88E94 /* GONMarkupList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupList.h; path = Classes/GONMarkupList.h; sourceTree = "<group>"; };
+		0FD822B31C34F8E3285DB27928A7EEF3 /* QBImagePickerController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QBImagePickerController-dummy.m"; sourceTree = "<group>"; };
+		125BF8B61C42448772F1791CA13BE26D /* QBAssetCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBAssetCell.m; path = QBImagePicker/QBAssetCell.m; sourceTree = "<group>"; };
+		12C02081690822FAA15045C03FFE99F1 /* NSString+Color-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+Color-prefix.pch"; sourceTree = "<group>"; };
+		14BE6A9F84923A3846BE21903AD7B964 /* GONMarkupItalic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupItalic.h; path = Classes/GONMarkupItalic.h; sourceTree = "<group>"; };
+		1532DAC36556E15A7A62CF7D8DBBD425 /* QBVideoIconView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBVideoIconView.m; path = QBImagePicker/QBVideoIconView.m; sourceTree = "<group>"; };
+		1B114A235F5B0A004CCD15DFCAA363B3 /* GONMarkupListItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupListItem.h; path = Classes/GONMarkupListItem.h; sourceTree = "<group>"; };
+		1D58895DC6A8F8DC006E05F144244923 /* GONMarkupItalic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupItalic.m; path = Classes/GONMarkupItalic.m; sourceTree = "<group>"; };
+		1EF0C44AAE15D161E9CF9343506ECCD0 /* GONMarkupBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupBlock.h; path = Classes/GONMarkupBlock.h; sourceTree = "<group>"; };
+		20D73B80DBEDC9935666EB05B502A6E8 /* libQBImagePickerController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libQBImagePickerController.a; path = libQBImagePickerController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F5A2DFDC5D2FC034DB07159BB089FD /* GONMarkupReset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupReset.h; path = Classes/GONMarkupReset.h; sourceTree = "<group>"; };
+		29438FBB64B331D42BCADF95570B9954 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = QBImagePicker/de.lproj; sourceTree = "<group>"; };
+		30DD6EB344BB2F240EB027BBB7F3744E /* GONMarkupParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GONMarkupParser-prefix.pch"; sourceTree = "<group>"; };
+		3240EB5A1AF3DA545F0EF30EF2D977F8 /* GONMarkupParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupParser.h; path = Classes/GONMarkupParser.h; sourceTree = "<group>"; };
+		328D3E506C850C6514C1EECFD7645577 /* GONMarkupAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupAnchor.h; path = Classes/GONMarkupAnchor.h; sourceTree = "<group>"; };
+		35A5DB5DBDCFBB0CEE80A61BD6E23CE6 /* GONMarkup+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GONMarkup+Private.m"; path = "Classes/GONMarkup+Private.m"; sourceTree = "<group>"; };
+		38ABE919B9E78986E411EC88696137D6 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = QBImagePicker/ja.lproj; sourceTree = "<group>"; };
+		38E852D66A101FBD657F2CD2F1A7EBFD /* GONMarkupNamedFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupNamedFont.h; path = Classes/GONMarkupNamedFont.h; sourceTree = "<group>"; };
+		38FEBAA76099634C33C1677F38FDC1A7 /* UIButton+GONMarkupParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+GONMarkupParser.h"; path = "Classes/UIButton+GONMarkupParser.h"; sourceTree = "<group>"; };
+		3DB302906BC3E9B977999322D7CF2937 /* NSString+Color.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "NSString+Color.debug.xcconfig"; sourceTree = "<group>"; };
+		3F9ADD586C393D0BC4A5ABE0B958E808 /* QBAlbumsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBAlbumsViewController.h; path = QBImagePicker/QBAlbumsViewController.h; sourceTree = "<group>"; };
+		45FD22D4B71316CD903E8449B93A30C3 /* QBVideoIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBVideoIndicatorView.h; path = QBImagePicker/QBVideoIndicatorView.h; sourceTree = "<group>"; };
+		4ADF5F694BD4A8E0B9101B3B0624F9AA /* Pods-UVLTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UVLTests-dummy.m"; sourceTree = "<group>"; };
+		4B106B43598A37514135F26D500D32C8 /* Pods-UVLUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UVLUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4B12EDCC289B8EE9AD0C18F7D038A45A /* NSString+Color.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Color.m"; path = "Classes/NSString+Color.m"; sourceTree = "<group>"; };
+		4D17006F9C0B484422BF0B80CBD44A0B /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = QBImagePicker/en.lproj; sourceTree = "<group>"; };
+		4FE130E9B0059D914E62E7C612F6CF90 /* GONMarkupFontTraits.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupFontTraits.m; path = Classes/GONMarkupFontTraits.m; sourceTree = "<group>"; };
+		52D88645811E31FFC072E2F6099FD500 /* GONMarkupNamedColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupNamedColor.h; path = Classes/GONMarkupNamedColor.h; sourceTree = "<group>"; };
+		5344F3B79795064E39FB5BDD25C19F42 /* QBVideoIndicatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBVideoIndicatorView.m; path = QBImagePicker/QBVideoIndicatorView.m; sourceTree = "<group>"; };
+		557E0D3B2408D73E9F60D7DCD35E847A /* GONMarkupLineStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupLineStyle.h; path = Classes/GONMarkupLineStyle.h; sourceTree = "<group>"; };
+		5666D964CEAB2A482B176C924E4B09F5 /* libPods-UVLUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-UVLUITests.a"; path = "libPods-UVLUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CEC7A88644C9B263757EAE0E30784C /* GONMarkupReset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupReset.m; path = Classes/GONMarkupReset.m; sourceTree = "<group>"; };
+		58CF680EC4695A9370DEB992972D2F05 /* GONMarkupInc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupInc.m; path = Classes/GONMarkupInc.m; sourceTree = "<group>"; };
+		5A593544185CF2AD0226F281B31C75B7 /* QBSlomoIconView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBSlomoIconView.m; path = QBImagePicker/QBSlomoIconView.m; sourceTree = "<group>"; };
+		5B2C2A80252ED2DC44DDE480447335C5 /* GONMarkupSimple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupSimple.h; path = Classes/GONMarkupSimple.h; sourceTree = "<group>"; };
+		5B9803092CCEAB22504A149AE93E9156 /* QBAlbumCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBAlbumCell.m; path = QBImagePicker/QBAlbumCell.m; sourceTree = "<group>"; };
+		5B9B15E10842A8983322453447D185C8 /* Pods-UVLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UVLTests.release.xcconfig"; sourceTree = "<group>"; };
+		6159910CF536399A6228E203778FB7D4 /* NSString+Color.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "NSString+Color.release.xcconfig"; sourceTree = "<group>"; };
+		618A62EC226A5C49ABB9AC07334F2EC3 /* GONMarkupParserUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupParserUtils.m; path = Classes/GONMarkupParserUtils.m; sourceTree = "<group>"; };
+		6497EAD48BC56BC8CB1233FC5AC6FCF2 /* GONMarkupParser_All.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupParser_All.h; path = Classes/GONMarkupParser_All.h; sourceTree = "<group>"; };
+		6559BE4E3423494276824F4487BC39CF /* GONMarkupFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupFont.h; path = Classes/GONMarkupFont.h; sourceTree = "<group>"; };
+		6977EE4586A30AE960631993EB9A3746 /* libPods-UVL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-UVL.a"; path = "libPods-UVL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BC2700AD4463931E5C7AA0D2370D70B /* QBAlbumCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBAlbumCell.h; path = QBImagePicker/QBAlbumCell.h; sourceTree = "<group>"; };
+		71395A65D587822E74AF535A96D07585 /* GONMarkupInc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupInc.h; path = Classes/GONMarkupInc.h; sourceTree = "<group>"; };
+		720449316C4885BEA9C79A196F930BAD /* GONMarkupNamedFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupNamedFont.m; path = Classes/GONMarkupNamedFont.m; sourceTree = "<group>"; };
+		762C3541C544F511AA81BB684556A855 /* GONMarkupParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupParser.m; path = Classes/GONMarkupParser.m; sourceTree = "<group>"; };
+		768EE20181DCDFD002C3BF5224AABC08 /* GONMarkupBold.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupBold.m; path = Classes/GONMarkupBold.m; sourceTree = "<group>"; };
+		782485FD1B6CFD9D0065BE9824F6AA1D /* GONMarkupDec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupDec.m; path = Classes/GONMarkupDec.m; sourceTree = "<group>"; };
+		786EE96A293167B17A0D42AD7DC97D11 /* QBAssetsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBAssetsViewController.h; path = QBImagePicker/QBAssetsViewController.h; sourceTree = "<group>"; };
+		7958796A7255F017B8D984A4B4C6B282 /* GONMarkupLineBreak.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupLineBreak.h; path = Classes/GONMarkupLineBreak.h; sourceTree = "<group>"; };
+		7A66863E77C5F3829DEF5D1940C2B7D2 /* GONMarkup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkup.m; path = Classes/GONMarkup.m; sourceTree = "<group>"; };
+		7C1AAC0156789224495D5D589242ED45 /* Pods-UVL-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UVL-acknowledgements.plist"; sourceTree = "<group>"; };
+		7C5E887A0E2E40DEBA743F560A6924D7 /* libGONMarkupParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGONMarkupParser.a; path = libGONMarkupParser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CAB4FDBF4A0CB5DE4E7976C4AE038C5 /* QBImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBImagePickerController.h; path = QBImagePicker/QBImagePickerController.h; sourceTree = "<group>"; };
+		7E8DC786CC01A407A3F8E40621F63114 /* GONMarkupDefaultMarkups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupDefaultMarkups.h; path = Classes/GONMarkupDefaultMarkups.h; sourceTree = "<group>"; };
+		7F841B573C27A74F8EB335EBD9E0375E /* QBSlomoIconView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBSlomoIconView.h; path = QBImagePicker/QBSlomoIconView.h; sourceTree = "<group>"; };
+		7FE97F6DA8A057504CF2041F101A989F /* QBVideoIconView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBVideoIconView.h; path = QBImagePicker/QBVideoIconView.h; sourceTree = "<group>"; };
+		80E52B2567F081B01A22A2C28DEF9387 /* QBAssetCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBAssetCell.h; path = QBImagePicker/QBAssetCell.h; sourceTree = "<group>"; };
+		81A536E13F71FA83B818554CCA4E89C0 /* Pods-UVLUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UVLUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		85D9B12C7F80012731075C404E5E5E71 /* QBAssetsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBAssetsViewController.m; path = QBImagePicker/QBAssetsViewController.m; sourceTree = "<group>"; };
+		85E791BF4AAD82B2B50A9078BCB95C29 /* GONMarkupTextStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupTextStyle.h; path = Classes/GONMarkupTextStyle.h; sourceTree = "<group>"; };
+		890554E1E5FE0AE77DB50676AF8D89E9 /* Pods-UVLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UVLTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A0D989FA72EE770C5BF5A81D3652EDA /* GONMarkupLineStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupLineStyle.m; path = Classes/GONMarkupLineStyle.m; sourceTree = "<group>"; };
+		8AC9A9CAE07AC4B66E368C13C06B43EA /* GONMarkupParserManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupParserManager.h; path = Classes/GONMarkupParserManager.h; sourceTree = "<group>"; };
+		8E2EED65890BBC82121ECD3A4CCF2682 /* GONMarkupParserUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupParserUtils.h; path = Classes/GONMarkupParserUtils.h; sourceTree = "<group>"; };
+		92AD7856DC3F5D1BA26E7A7EEE1DF411 /* GONMarkupList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupList.m; path = Classes/GONMarkupList.m; sourceTree = "<group>"; };
+		934B16225DE8CA0A7107B2819FAD5FD5 /* GONMarkupParagrap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupParagrap.h; path = Classes/GONMarkupParagrap.h; sourceTree = "<group>"; };
+		95971BC1D6064991D41E0707EE19DE7A /* QBCheckmarkView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBCheckmarkView.h; path = QBImagePicker/QBCheckmarkView.h; sourceTree = "<group>"; };
+		99F59C0D4FDFACA3EE7B096E66AC5489 /* QBCheckmarkView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBCheckmarkView.m; path = QBImagePicker/QBCheckmarkView.m; sourceTree = "<group>"; };
+		9BC131B2F97963E0A7D76D4E43664FF3 /* Pods-UVL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UVL.release.xcconfig"; sourceTree = "<group>"; };
+		9CABE04086E7B8C385433C51CFF628D8 /* UITextField+GONMarkupParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+GONMarkupParser.h"; path = "Classes/UITextField+GONMarkupParser.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EC1C153A3056EE4FF2A3262EE2F093A /* GONMarkupFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupFont.m; path = Classes/GONMarkupFont.m; sourceTree = "<group>"; };
+		9F0C8CB6DE53DEADFFA45FE18778C9EA /* Pods-UVL-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UVL-resources.sh"; sourceTree = "<group>"; };
+		9FE7DDCAC042937D7D8FD11D5F8D6D8D /* GONMarkupParser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GONMarkupParser.debug.xcconfig; sourceTree = "<group>"; };
+		A24428F42BBDA83B1237A4243E320466 /* Pods-UVLUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UVLUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A3344D02587E2C99CFB3386033086266 /* GONMarkup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkup.h; path = Classes/GONMarkup.h; sourceTree = "<group>"; };
+		A4CB3CECF970E561EFB5EAB7F8169DEB /* NSString+Color-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Color-dummy.m"; sourceTree = "<group>"; };
+		A54376DD9F5F5363DD0B80CB5BC0F5AA /* GONMarkupParser_Categories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupParser_Categories.h; path = Classes/GONMarkupParser_Categories.h; sourceTree = "<group>"; };
+		A72EA20663303A319E1FF65688656B79 /* UITextField+GONMarkupParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+GONMarkupParser.m"; path = "Classes/UITextField+GONMarkupParser.m"; sourceTree = "<group>"; };
+		A76F3985B83A2F4EC66D52F35BE73C11 /* GONMarkupParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GONMarkupParser-dummy.m"; sourceTree = "<group>"; };
+		AB68677D2883631B3A4DD8BF10A4296A /* GONMarkupAlignment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupAlignment.h; path = Classes/GONMarkupAlignment.h; sourceTree = "<group>"; };
+		AD66B54874A9FF7E0FB6CA5003076222 /* libNSString+Color.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libNSString+Color.a"; path = "libNSString+Color.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE078A5A5C0FE278818E8968FCB57347 /* QBImagePickerController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QBImagePickerController-prefix.pch"; sourceTree = "<group>"; };
+		B0922FA72B98C665F87FCD84849F3EBC /* GONMarkupListItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupListItem.m; path = Classes/GONMarkupListItem.m; sourceTree = "<group>"; };
+		B17F85D1CCA476F715A78F640D83E1A6 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = QBImagePicker/es.lproj; sourceTree = "<group>"; };
+		B47F14CA72C327BE6935A5B264D2365D /* GONMarkupColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupColor.m; path = Classes/GONMarkupColor.m; sourceTree = "<group>"; };
+		B768E40627EB3ED7312B1B439D100EEE /* QBImagePickerController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QBImagePickerController.release.xcconfig; sourceTree = "<group>"; };
+		B918DFAAE5593369BCC559CC83B0179A /* GONMarkupColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupColor.h; path = Classes/GONMarkupColor.h; sourceTree = "<group>"; };
+		BA469CC747E43024383095DBE595ED26 /* GONMarkupParagrap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupParagrap.m; path = Classes/GONMarkupParagrap.m; sourceTree = "<group>"; };
+		BBFA4BD07C4E6177135308FDABE2784A /* GONMarkupBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupBlock.m; path = Classes/GONMarkupBlock.m; sourceTree = "<group>"; };
+		C3D2DA70A35CDD7574BF29886CC18A9A /* Pods-UVLTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UVLTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C9708630F9D9C8C32EF0B3C91B9E469D /* QBImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = QBImagePicker.bundle; path = "QBImagePickerController-QBImagePicker.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6EA0D0F28B189BD3B1A91D0A87379B /* GONMarkupNamedColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupNamedColor.m; path = Classes/GONMarkupNamedColor.m; sourceTree = "<group>"; };
+		D0259B540CFE1EA91AF75572D44E065D /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "QBImagePicker/zh-Hans.lproj"; sourceTree = "<group>"; };
+		D06A668AC6C2B05AF9858B9C041C662F /* UILabel+GONMarkupParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+GONMarkupParser.m"; path = "Classes/UILabel+GONMarkupParser.m"; sourceTree = "<group>"; };
+		D0FCB964C5ABE549FC7F9DF58F8114FC /* GONMarkupAnchor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupAnchor.m; path = Classes/GONMarkupAnchor.m; sourceTree = "<group>"; };
+		D3A9D763969400F3738FC0A640B6AE82 /* QBImagePickerController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QBImagePickerController.debug.xcconfig; sourceTree = "<group>"; };
+		D633662EA205841FA307EFC5FF134CBD /* GONMarkupLineBreak.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupLineBreak.m; path = Classes/GONMarkupLineBreak.m; sourceTree = "<group>"; };
+		D85C76CD4F7B21FEA9FEE5FA0C5A38F3 /* GONMarkupSimple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupSimple.m; path = Classes/GONMarkupSimple.m; sourceTree = "<group>"; };
+		D9D7A51045F57247446BAAAA3848E2B9 /* GONMarkupTextStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupTextStyle.m; path = Classes/GONMarkupTextStyle.m; sourceTree = "<group>"; };
+		DAD4821684ADDE484D4718DFC939874E /* UITextView+GONMarkupParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+GONMarkupParser.h"; path = "Classes/UITextView+GONMarkupParser.h"; sourceTree = "<group>"; };
+		E18502F44CE471D43EB88D4543232A03 /* QBImagePicker.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = QBImagePicker.storyboard; path = QBImagePicker/QBImagePicker.storyboard; sourceTree = "<group>"; };
+		E4B954876E59C5C65CBAF85CB3058EF5 /* QBAlbumsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBAlbumsViewController.m; path = QBImagePicker/QBAlbumsViewController.m; sourceTree = "<group>"; };
+		E5660D8CA9887E6D39A5C41BC130E8A0 /* GONMarkupParser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GONMarkupParser.release.xcconfig; sourceTree = "<group>"; };
+		E61B7FFB27B1DB3C042EC07D4A963A57 /* Pods-UVL-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UVL-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E692FF2D4FAB77882FC2C21CD09C4426 /* GONMarkupImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GONMarkupImage.m; path = Classes/GONMarkupImage.m; sourceTree = "<group>"; };
+		E8E7E165E490D648E07ADBF0CF027CDE /* GONMarkupDec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupDec.h; path = Classes/GONMarkupDec.h; sourceTree = "<group>"; };
+		EAAFD66C2CBE1C56D05608B2BFA44BA3 /* QBImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBImagePickerController.m; path = QBImagePicker/QBImagePickerController.m; sourceTree = "<group>"; };
+		EDDBE3D9C562F49D6ECD962748A0A6CC /* Pods-UVLUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UVLUITests-dummy.m"; sourceTree = "<group>"; };
+		F391E3CC4CFF3A3C9A2E7AD054D5FC3E /* NSString+Color.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Color.h"; path = "Classes/NSString+Color.h"; sourceTree = "<group>"; };
+		F3B268FE9ED0C6902260EB6474CAF3FD /* Pods-UVL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UVL-dummy.m"; sourceTree = "<group>"; };
+		F3DDE80F1FAD88FA9B2DAA6B11D9D26B /* ResourceBundle-QBImagePicker-QBImagePickerController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-QBImagePicker-QBImagePickerController-Info.plist"; sourceTree = "<group>"; };
+		F52F5C806B0D851AF987DD1874C04A9F /* Pods-UVLUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UVLUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F7FC180E182D0C943EF7172B1C504A51 /* UITextView+GONMarkupParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+GONMarkupParser.m"; path = "Classes/UITextView+GONMarkupParser.m"; sourceTree = "<group>"; };
+		F8AA218C9D25EC938C1AB75246A15EFE /* Pods-UVL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UVL.debug.xcconfig"; sourceTree = "<group>"; };
+		F8EE8751CCE7265872D7A0684CCD3624 /* GONMarkupImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupImage.h; path = Classes/GONMarkupImage.h; sourceTree = "<group>"; };
+		FAC10B3952EDC65918C819A1954DAEAF /* GONMarkupBold.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GONMarkupBold.h; path = Classes/GONMarkupBold.h; sourceTree = "<group>"; };
+		FE6816BFC314C750601E54205F48A92B /* UILabel+GONMarkupParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+GONMarkupParser.h"; path = "Classes/UILabel+GONMarkupParser.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47BB4004F8AAF15E49E344A8239B99BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48D8F969D1524A11D86C16C25B771A96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C16EF2CA9DD207A148EF3F5C4C159B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B5167AABC06DB77A776AA22C5083CA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DD9D965164DE314D337CFAED5A486DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE9C877656FAE37FD54F7F19FF463B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDB52DD04B7EB570B463DE5CB2435E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		088C607C0D0298F7E1EFB5008073152E /* Pods-UVLTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3D2DA70A35CDD7574BF29886CC18A9A /* Pods-UVLTests-acknowledgements.markdown */,
+				05AE409A2D73BFB214071382D65289E0 /* Pods-UVLTests-acknowledgements.plist */,
+				4ADF5F694BD4A8E0B9101B3B0624F9AA /* Pods-UVLTests-dummy.m */,
+				890554E1E5FE0AE77DB50676AF8D89E9 /* Pods-UVLTests.debug.xcconfig */,
+				5B9B15E10842A8983322453447D185C8 /* Pods-UVLTests.release.xcconfig */,
+			);
+			name = "Pods-UVLTests";
+			path = "Target Support Files/Pods-UVLTests";
+			sourceTree = "<group>";
+		};
+		0AD3F1AF56FEDE86C17D34C87DDF6B52 /* QBImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				6BC2700AD4463931E5C7AA0D2370D70B /* QBAlbumCell.h */,
+				5B9803092CCEAB22504A149AE93E9156 /* QBAlbumCell.m */,
+				3F9ADD586C393D0BC4A5ABE0B958E808 /* QBAlbumsViewController.h */,
+				E4B954876E59C5C65CBAF85CB3058EF5 /* QBAlbumsViewController.m */,
+				80E52B2567F081B01A22A2C28DEF9387 /* QBAssetCell.h */,
+				125BF8B61C42448772F1791CA13BE26D /* QBAssetCell.m */,
+				786EE96A293167B17A0D42AD7DC97D11 /* QBAssetsViewController.h */,
+				85D9B12C7F80012731075C404E5E5E71 /* QBAssetsViewController.m */,
+				95971BC1D6064991D41E0707EE19DE7A /* QBCheckmarkView.h */,
+				99F59C0D4FDFACA3EE7B096E66AC5489 /* QBCheckmarkView.m */,
+				7CAB4FDBF4A0CB5DE4E7976C4AE038C5 /* QBImagePickerController.h */,
+				EAAFD66C2CBE1C56D05608B2BFA44BA3 /* QBImagePickerController.m */,
+				7F841B573C27A74F8EB335EBD9E0375E /* QBSlomoIconView.h */,
+				5A593544185CF2AD0226F281B31C75B7 /* QBSlomoIconView.m */,
+				7FE97F6DA8A057504CF2041F101A989F /* QBVideoIconView.h */,
+				1532DAC36556E15A7A62CF7D8DBBD425 /* QBVideoIconView.m */,
+				45FD22D4B71316CD903E8449B93A30C3 /* QBVideoIndicatorView.h */,
+				5344F3B79795064E39FB5BDD25C19F42 /* QBVideoIndicatorView.m */,
+				F097B0EA60792027C871AA730E52FFC5 /* Resources */,
+				3E801AA2DC3D83E69815A65D911A37CF /* Support Files */,
+			);
+			name = QBImagePickerController;
+			path = QBImagePickerController;
+			sourceTree = "<group>";
+		};
+		28E3424D5BF92C6C8E0CEB518670BFEC /* Pods-UVL */ = {
+			isa = PBXGroup;
+			children = (
+				E61B7FFB27B1DB3C042EC07D4A963A57 /* Pods-UVL-acknowledgements.markdown */,
+				7C1AAC0156789224495D5D589242ED45 /* Pods-UVL-acknowledgements.plist */,
+				F3B268FE9ED0C6902260EB6474CAF3FD /* Pods-UVL-dummy.m */,
+				9F0C8CB6DE53DEADFFA45FE18778C9EA /* Pods-UVL-resources.sh */,
+				F8AA218C9D25EC938C1AB75246A15EFE /* Pods-UVL.debug.xcconfig */,
+				9BC131B2F97963E0A7D76D4E43664FF3 /* Pods-UVL.release.xcconfig */,
+			);
+			name = "Pods-UVL";
+			path = "Target Support Files/Pods-UVL";
+			sourceTree = "<group>";
+		};
+		2C0A9E59D8078385A77FB9BA5AB835F5 /* Pods-UVLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A24428F42BBDA83B1237A4243E320466 /* Pods-UVLUITests-acknowledgements.markdown */,
+				F52F5C806B0D851AF987DD1874C04A9F /* Pods-UVLUITests-acknowledgements.plist */,
+				EDDBE3D9C562F49D6ECD962748A0A6CC /* Pods-UVLUITests-dummy.m */,
+				81A536E13F71FA83B818554CCA4E89C0 /* Pods-UVLUITests.debug.xcconfig */,
+				4B106B43598A37514135F26D500D32C8 /* Pods-UVLUITests.release.xcconfig */,
+			);
+			name = "Pods-UVLUITests";
+			path = "Target Support Files/Pods-UVLUITests";
+			sourceTree = "<group>";
+		};
+		32DC4A4A335EF56B43322B87E1F57F57 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4CB3CECF970E561EFB5EAB7F8169DEB /* NSString+Color-dummy.m */,
+				12C02081690822FAA15045C03FFE99F1 /* NSString+Color-prefix.pch */,
+				3DB302906BC3E9B977999322D7CF2937 /* NSString+Color.debug.xcconfig */,
+				6159910CF536399A6228E203778FB7D4 /* NSString+Color.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NSString+Color";
+			sourceTree = "<group>";
+		};
+		3E801AA2DC3D83E69815A65D911A37CF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FD822B31C34F8E3285DB27928A7EEF3 /* QBImagePickerController-dummy.m */,
+				AE078A5A5C0FE278818E8968FCB57347 /* QBImagePickerController-prefix.pch */,
+				D3A9D763969400F3738FC0A640B6AE82 /* QBImagePickerController.debug.xcconfig */,
+				B768E40627EB3ED7312B1B439D100EEE /* QBImagePickerController.release.xcconfig */,
+				F3DDE80F1FAD88FA9B2DAA6B11D9D26B /* ResourceBundle-QBImagePicker-QBImagePickerController-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/QBImagePickerController";
+			sourceTree = "<group>";
+		};
+		5D39BEF49A96436CF825BA8E7E5F4EB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0EEACF1DDA7DB234A67F81E670C22 /* GONMarkupParser */,
+				8CEDF6A1272569C0C1A53426EDF9A7FE /* NSString+Color */,
+				0AD3F1AF56FEDE86C17D34C87DDF6B52 /* QBImagePickerController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83C84F9FB9E903273D397EF6C8F84E74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C5E887A0E2E40DEBA743F560A6924D7 /* libGONMarkupParser.a */,
+				AD66B54874A9FF7E0FB6CA5003076222 /* libNSString+Color.a */,
+				6977EE4586A30AE960631993EB9A3746 /* libPods-UVL.a */,
+				0326AAE07E458BEA5E0AAB70A143491B /* libPods-UVLTests.a */,
+				5666D964CEAB2A482B176C924E4B09F5 /* libPods-UVLUITests.a */,
+				20D73B80DBEDC9935666EB05B502A6E8 /* libQBImagePickerController.a */,
+				C9708630F9D9C8C32EF0B3C91B9E469D /* QBImagePicker.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CEDF6A1272569C0C1A53426EDF9A7FE /* NSString+Color */ = {
+			isa = PBXGroup;
+			children = (
+				F391E3CC4CFF3A3C9A2E7AD054D5FC3E /* NSString+Color.h */,
+				4B12EDCC289B8EE9AD0C18F7D038A45A /* NSString+Color.m */,
+				32DC4A4A335EF56B43322B87E1F57F57 /* Support Files */,
+			);
+			name = "NSString+Color";
+			path = "NSString+Color";
+			sourceTree = "<group>";
+		};
+		9CDBFB37AE4419146BF29D7362EED8AD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A76F3985B83A2F4EC66D52F35BE73C11 /* GONMarkupParser-dummy.m */,
+				30DD6EB344BB2F240EB027BBB7F3744E /* GONMarkupParser-prefix.pch */,
+				9FE7DDCAC042937D7D8FD11D5F8D6D8D /* GONMarkupParser.debug.xcconfig */,
+				E5660D8CA9887E6D39A5C41BC130E8A0 /* GONMarkupParser.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GONMarkupParser";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				5D39BEF49A96436CF825BA8E7E5F4EB8 /* Pods */,
+				83C84F9FB9E903273D397EF6C8F84E74 /* Products */,
+				DE13C669B29EE1BD1CBB53CEE62086A0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D3C0EEACF1DDA7DB234A67F81E670C22 /* GONMarkupParser */ = {
+			isa = PBXGroup;
+			children = (
+				A3344D02587E2C99CFB3386033086266 /* GONMarkup.h */,
+				7A66863E77C5F3829DEF5D1940C2B7D2 /* GONMarkup.m */,
+				0AB4EFCFF361B753D93B2BDF8957C567 /* GONMarkup+Private.h */,
+				35A5DB5DBDCFBB0CEE80A61BD6E23CE6 /* GONMarkup+Private.m */,
+				AB68677D2883631B3A4DD8BF10A4296A /* GONMarkupAlignment.h */,
+				02FD3963119A755D4C3305C2982F7519 /* GONMarkupAlignment.m */,
+				328D3E506C850C6514C1EECFD7645577 /* GONMarkupAnchor.h */,
+				D0FCB964C5ABE549FC7F9DF58F8114FC /* GONMarkupAnchor.m */,
+				1EF0C44AAE15D161E9CF9343506ECCD0 /* GONMarkupBlock.h */,
+				BBFA4BD07C4E6177135308FDABE2784A /* GONMarkupBlock.m */,
+				FAC10B3952EDC65918C819A1954DAEAF /* GONMarkupBold.h */,
+				768EE20181DCDFD002C3BF5224AABC08 /* GONMarkupBold.m */,
+				B918DFAAE5593369BCC559CC83B0179A /* GONMarkupColor.h */,
+				B47F14CA72C327BE6935A5B264D2365D /* GONMarkupColor.m */,
+				E8E7E165E490D648E07ADBF0CF027CDE /* GONMarkupDec.h */,
+				782485FD1B6CFD9D0065BE9824F6AA1D /* GONMarkupDec.m */,
+				7E8DC786CC01A407A3F8E40621F63114 /* GONMarkupDefaultMarkups.h */,
+				6559BE4E3423494276824F4487BC39CF /* GONMarkupFont.h */,
+				9EC1C153A3056EE4FF2A3262EE2F093A /* GONMarkupFont.m */,
+				0430A11260DD347784F94D0AB8F37F68 /* GONMarkupFontTraits.h */,
+				4FE130E9B0059D914E62E7C612F6CF90 /* GONMarkupFontTraits.m */,
+				F8EE8751CCE7265872D7A0684CCD3624 /* GONMarkupImage.h */,
+				E692FF2D4FAB77882FC2C21CD09C4426 /* GONMarkupImage.m */,
+				71395A65D587822E74AF535A96D07585 /* GONMarkupInc.h */,
+				58CF680EC4695A9370DEB992972D2F05 /* GONMarkupInc.m */,
+				14BE6A9F84923A3846BE21903AD7B964 /* GONMarkupItalic.h */,
+				1D58895DC6A8F8DC006E05F144244923 /* GONMarkupItalic.m */,
+				7958796A7255F017B8D984A4B4C6B282 /* GONMarkupLineBreak.h */,
+				D633662EA205841FA307EFC5FF134CBD /* GONMarkupLineBreak.m */,
+				557E0D3B2408D73E9F60D7DCD35E847A /* GONMarkupLineStyle.h */,
+				8A0D989FA72EE770C5BF5A81D3652EDA /* GONMarkupLineStyle.m */,
+				0E4B8AC2DEE145062D6DBA64A7A88E94 /* GONMarkupList.h */,
+				92AD7856DC3F5D1BA26E7A7EEE1DF411 /* GONMarkupList.m */,
+				1B114A235F5B0A004CCD15DFCAA363B3 /* GONMarkupListItem.h */,
+				B0922FA72B98C665F87FCD84849F3EBC /* GONMarkupListItem.m */,
+				52D88645811E31FFC072E2F6099FD500 /* GONMarkupNamedColor.h */,
+				CB6EA0D0F28B189BD3B1A91D0A87379B /* GONMarkupNamedColor.m */,
+				38E852D66A101FBD657F2CD2F1A7EBFD /* GONMarkupNamedFont.h */,
+				720449316C4885BEA9C79A196F930BAD /* GONMarkupNamedFont.m */,
+				934B16225DE8CA0A7107B2819FAD5FD5 /* GONMarkupParagrap.h */,
+				BA469CC747E43024383095DBE595ED26 /* GONMarkupParagrap.m */,
+				3240EB5A1AF3DA545F0EF30EF2D977F8 /* GONMarkupParser.h */,
+				762C3541C544F511AA81BB684556A855 /* GONMarkupParser.m */,
+				6497EAD48BC56BC8CB1233FC5AC6FCF2 /* GONMarkupParser_All.h */,
+				A54376DD9F5F5363DD0B80CB5BC0F5AA /* GONMarkupParser_Categories.h */,
+				8AC9A9CAE07AC4B66E368C13C06B43EA /* GONMarkupParserManager.h */,
+				050534BBF05BF50F9EE81EBF66E679F1 /* GONMarkupParserManager.m */,
+				8E2EED65890BBC82121ECD3A4CCF2682 /* GONMarkupParserUtils.h */,
+				618A62EC226A5C49ABB9AC07334F2EC3 /* GONMarkupParserUtils.m */,
+				25F5A2DFDC5D2FC034DB07159BB089FD /* GONMarkupReset.h */,
+				57CEC7A88644C9B263757EAE0E30784C /* GONMarkupReset.m */,
+				5B2C2A80252ED2DC44DDE480447335C5 /* GONMarkupSimple.h */,
+				D85C76CD4F7B21FEA9FEE5FA0C5A38F3 /* GONMarkupSimple.m */,
+				85E791BF4AAD82B2B50A9078BCB95C29 /* GONMarkupTextStyle.h */,
+				D9D7A51045F57247446BAAAA3848E2B9 /* GONMarkupTextStyle.m */,
+				38FEBAA76099634C33C1677F38FDC1A7 /* UIButton+GONMarkupParser.h */,
+				0256DC8969F3DFE09201047EE35B727D /* UIButton+GONMarkupParser.m */,
+				FE6816BFC314C750601E54205F48A92B /* UILabel+GONMarkupParser.h */,
+				D06A668AC6C2B05AF9858B9C041C662F /* UILabel+GONMarkupParser.m */,
+				9CABE04086E7B8C385433C51CFF628D8 /* UITextField+GONMarkupParser.h */,
+				A72EA20663303A319E1FF65688656B79 /* UITextField+GONMarkupParser.m */,
+				DAD4821684ADDE484D4718DFC939874E /* UITextView+GONMarkupParser.h */,
+				F7FC180E182D0C943EF7172B1C504A51 /* UITextView+GONMarkupParser.m */,
+				9CDBFB37AE4419146BF29D7362EED8AD /* Support Files */,
+			);
+			name = GONMarkupParser;
+			path = GONMarkupParser;
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE13C669B29EE1BD1CBB53CEE62086A0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				28E3424D5BF92C6C8E0CEB518670BFEC /* Pods-UVL */,
+				088C607C0D0298F7E1EFB5008073152E /* Pods-UVLTests */,
+				2C0A9E59D8078385A77FB9BA5AB835F5 /* Pods-UVLUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F097B0EA60792027C871AA730E52FFC5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29438FBB64B331D42BCADF95570B9954 /* de.lproj */,
+				4D17006F9C0B484422BF0B80CBD44A0B /* en.lproj */,
+				B17F85D1CCA476F715A78F640D83E1A6 /* es.lproj */,
+				38ABE919B9E78986E411EC88696137D6 /* ja.lproj */,
+				E18502F44CE471D43EB88D4543232A03 /* QBImagePicker.storyboard */,
+				D0259B540CFE1EA91AF75572D44E065D /* zh-Hans.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0DAEB6FB7F56410E2F8C2DC6AE1F7C18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B51F05A694CDB88093791F914F2AB0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33D9F745B641651BB10F7E6E4CE432B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2274F45A958D412E13D285436600B785 /* NSString+Color.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4BB5BEE061076BFB7CD3D04408813D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4DF32A721DCDE6B54D5EB56BDBD7C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65898BD1761149738086C5CBF91F53E /* QBAlbumCell.h in Headers */,
+				F56A34FD183CAD25BC6D16B75DF99750 /* QBAlbumsViewController.h in Headers */,
+				9F73949A6CCDD842885AAD80DD1302AC /* QBAssetCell.h in Headers */,
+				0357222C8667E8D23A35DB5EB23D9A2C /* QBAssetsViewController.h in Headers */,
+				835F4F916F38100D92721459CCF46947 /* QBCheckmarkView.h in Headers */,
+				7AF7844F65361DD5BA6B5551A8B8897C /* QBImagePickerController.h in Headers */,
+				3AFC307FB2E040BEB710A462EDD8F272 /* QBSlomoIconView.h in Headers */,
+				5CAC31EC3285137B36837FDC5E317C89 /* QBVideoIconView.h in Headers */,
+				8464B456808F2737DC8FB0AB85D39053 /* QBVideoIndicatorView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFA7EBC700478C02B9B3D9F3C9B799D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A08DC328ACE9DCEDC11C78F543A8288 /* GONMarkup+Private.h in Headers */,
+				0E7A507B280FC70A9BA3299A69CBE57B /* GONMarkup.h in Headers */,
+				872AC74AB8962716B9AA071ECA733F17 /* GONMarkupAlignment.h in Headers */,
+				DDEF09E2A77FEACF161647306DAEF433 /* GONMarkupAnchor.h in Headers */,
+				26F593C6BF23266014A94F766F908C5F /* GONMarkupBlock.h in Headers */,
+				1F27FAF13892C31645434DE70BD2F681 /* GONMarkupBold.h in Headers */,
+				9EC8D9B2E193CE27370ED348B5647FC7 /* GONMarkupColor.h in Headers */,
+				630950D357429C0E26411ABF02BB419E /* GONMarkupDec.h in Headers */,
+				56316DE74D7D622AFC7B0FCA85500DC9 /* GONMarkupDefaultMarkups.h in Headers */,
+				99CA73ADF184A5A975D0F04ECDF722FC /* GONMarkupFont.h in Headers */,
+				CC43CDB4EDB10953C4069B6454212C61 /* GONMarkupFontTraits.h in Headers */,
+				553A326C493A82551173E7CD0DD220BE /* GONMarkupImage.h in Headers */,
+				4AD080211440EC1A1F90AA7D655BCFAD /* GONMarkupInc.h in Headers */,
+				60EC144186A49FD771B20CE041E8A7EA /* GONMarkupItalic.h in Headers */,
+				03D8D3CF90AD44253F8F6E49A72160FF /* GONMarkupLineBreak.h in Headers */,
+				A0E74A7A4E7C0C877DFEDF52FE86EBCA /* GONMarkupLineStyle.h in Headers */,
+				9979D7803A4D274B42DDAAEA2517DCE3 /* GONMarkupList.h in Headers */,
+				AA6C1437C9BA375BA8C89BA925491451 /* GONMarkupListItem.h in Headers */,
+				F7685C7B5B3DB39DD3B4E81D07D79411 /* GONMarkupNamedColor.h in Headers */,
+				F09B5E5B8E63F649A8CE166712504F9D /* GONMarkupNamedFont.h in Headers */,
+				2E3541041064DB63609C9FA0F589BF3B /* GONMarkupParagrap.h in Headers */,
+				FA3114B50F67FD8A3993E5951A9D06A4 /* GONMarkupParser.h in Headers */,
+				9801A6703C74253F424C036601CFD8EF /* GONMarkupParser_All.h in Headers */,
+				E9160B44211A4A635EBE24069A2B5092 /* GONMarkupParser_Categories.h in Headers */,
+				8D791F9A824265FC7E86F9B37095E390 /* GONMarkupParserManager.h in Headers */,
+				9CBEF53027468372F4422E39AA7F70E3 /* GONMarkupParserUtils.h in Headers */,
+				69F40A34B230DFD88C0C02946B3D8395 /* GONMarkupReset.h in Headers */,
+				560C696756B9A4EBAE267731C5B073B6 /* GONMarkupSimple.h in Headers */,
+				5710B36BA47A4150785E6131D12A314E /* GONMarkupTextStyle.h in Headers */,
+				6335F5C5655F4B427C5C97D39C03ACAD /* UIButton+GONMarkupParser.h in Headers */,
+				B7596425622392F07E9B141A58872FB0 /* UILabel+GONMarkupParser.h in Headers */,
+				653BA7A727F1F262CE6C1F8A8F4F568A /* UITextField+GONMarkupParser.h in Headers */,
+				D0B0D69AB5B164A3FC533DB2BD25FBC0 /* UITextView+GONMarkupParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0DD1DFD3AA09A39D84E4B1C455E5A93A /* GONMarkupParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE697C5654B37B6F11CE3D33EE1A3F81 /* Build configuration list for PBXNativeTarget "GONMarkupParser" */;
+			buildPhases = (
+				EFA7EBC700478C02B9B3D9F3C9B799D1 /* Headers */,
+				A3E82C86801535511FB5100584535C12 /* Sources */,
+				ECDB52DD04B7EB570B463DE5CB2435E5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				368CC284245179177EB4EACB3DBFFB93 /* PBXTargetDependency */,
+			);
+			name = GONMarkupParser;
+			productName = GONMarkupParser;
+			productReference = 7C5E887A0E2E40DEBA743F560A6924D7 /* libGONMarkupParser.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1274EAC63C7555AB93F5D98C5B296538 /* Pods-UVL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBE0D85CC238740CF0BF462E43C1727F /* Build configuration list for PBXNativeTarget "Pods-UVL" */;
+			buildPhases = (
+				B4BB5BEE061076BFB7CD3D04408813D7 /* Headers */,
+				E448012961328205D9F6E1A2AFCD5D58 /* Sources */,
+				8DD9D965164DE314D337CFAED5A486DE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B61B174AC62031F4BE31B63F1706BF75 /* PBXTargetDependency */,
+				D3BE09116B3D84AC348C57EAA8E705B9 /* PBXTargetDependency */,
+				63058CE193457FE73A162A2F7058809B /* PBXTargetDependency */,
+			);
+			name = "Pods-UVL";
+			productName = "Pods-UVL";
+			productReference = 6977EE4586A30AE960631993EB9A3746 /* libPods-UVL.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		84494C4745CF61682325047C53B74C57 /* Pods-UVLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E5297BD63FA55107F587A4E1BBF89F /* Build configuration list for PBXNativeTarget "Pods-UVLTests" */;
+			buildPhases = (
+				0DAEB6FB7F56410E2F8C2DC6AE1F7C18 /* Headers */,
+				5F2853557A005ABEC3BACD96A8FFD220 /* Sources */,
+				DFE9C877656FAE37FD54F7F19FF463B9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B21D2D4FD3B6010FBF19126D2E72C7A3 /* PBXTargetDependency */,
+			);
+			name = "Pods-UVLTests";
+			productName = "Pods-UVLTests";
+			productReference = 0326AAE07E458BEA5E0AAB70A143491B /* libPods-UVLTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8C26CBC67ABBE63E1991C42D5CDAE205 /* NSString+Color */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B043182C82684DB9BACF3DDA86837A92 /* Build configuration list for PBXNativeTarget "NSString+Color" */;
+			buildPhases = (
+				33D9F745B641651BB10F7E6E4CE432B6 /* Headers */,
+				C05A1361CF4C14EFABF2B3E7DD7C2F17 /* Sources */,
+				48D8F969D1524A11D86C16C25B771A96 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSString+Color";
+			productName = "NSString+Color";
+			productReference = AD66B54874A9FF7E0FB6CA5003076222 /* libNSString+Color.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C49345AFA49B098B0384C4FA864A4868 /* QBImagePickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0381032BB4047DBB42D4D321A45F3F79 /* Build configuration list for PBXNativeTarget "QBImagePickerController" */;
+			buildPhases = (
+				CF4DF32A721DCDE6B54D5EB56BDBD7C9 /* Headers */,
+				22DB8B422B80571D15DC532267D86FD5 /* Sources */,
+				5B5167AABC06DB77A776AA22C5083CA1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91C22740995DF54C09EC71E97EA75D71 /* PBXTargetDependency */,
+			);
+			name = QBImagePickerController;
+			productName = QBImagePickerController;
+			productReference = 20D73B80DBEDC9935666EB05B502A6E8 /* libQBImagePickerController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EAEBAE5C8257AED94B3BED47A0E0E3FA /* QBImagePickerController-QBImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71542C32A73DEC20882419BB7CC4A141 /* Build configuration list for PBXNativeTarget "QBImagePickerController-QBImagePicker" */;
+			buildPhases = (
+				6D5955B491572B96285ABCFB9FC85675 /* Sources */,
+				47BB4004F8AAF15E49E344A8239B99BC /* Frameworks */,
+				A30A2A1C78B3D470838213E0AE6791CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QBImagePickerController-QBImagePicker";
+			productName = "QBImagePickerController-QBImagePicker";
+			productReference = C9708630F9D9C8C32EF0B3C91B9E469D /* QBImagePicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		EC3AEC9407135FBCD38D88CC6B17BD46 /* Pods-UVLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA115271606CE9254D87A7E58D31F14F /* Build configuration list for PBXNativeTarget "Pods-UVLUITests" */;
+			buildPhases = (
+				15B51F05A694CDB88093791F914F2AB0 /* Headers */,
+				3811DEFC0D52D34FF678C7F398E91728 /* Sources */,
+				4C16EF2CA9DD207A148EF3F5C4C159B9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7227BF94C06F8DEBB14084322BCC138E /* PBXTargetDependency */,
+			);
+			name = "Pods-UVLUITests";
+			productName = "Pods-UVLUITests";
+			productReference = 5666D964CEAB2A482B176C924E4B09F5 /* libPods-UVLUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 83C84F9FB9E903273D397EF6C8F84E74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DD1DFD3AA09A39D84E4B1C455E5A93A /* GONMarkupParser */,
+				8C26CBC67ABBE63E1991C42D5CDAE205 /* NSString+Color */,
+				1274EAC63C7555AB93F5D98C5B296538 /* Pods-UVL */,
+				84494C4745CF61682325047C53B74C57 /* Pods-UVLTests */,
+				EC3AEC9407135FBCD38D88CC6B17BD46 /* Pods-UVLUITests */,
+				C49345AFA49B098B0384C4FA864A4868 /* QBImagePickerController */,
+				EAEBAE5C8257AED94B3BED47A0E0E3FA /* QBImagePickerController-QBImagePicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A30A2A1C78B3D470838213E0AE6791CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82EAB9D47729E275668B2216318B929 /* de.lproj in Resources */,
+				65D07DB634627973A6996BA8F30F9A98 /* en.lproj in Resources */,
+				89A2F6EE6C9472A2D2E257C7D590DC5C /* es.lproj in Resources */,
+				DBE850E30FF21B705313467866F35B35 /* ja.lproj in Resources */,
+				4BC0DCCAF44339236DB62DC18B43A737 /* QBImagePicker.storyboard in Resources */,
+				55E6512DB14338F908ECE94435BBEE82 /* zh-Hans.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22DB8B422B80571D15DC532267D86FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D455B14808AD83F1D945BC9E76AB0A02 /* QBAlbumCell.m in Sources */,
+				F07EFF41F3CB35B1817794179A93BFBB /* QBAlbumsViewController.m in Sources */,
+				B68BEEAB18A3A5E6B4CEE0A4D822971B /* QBAssetCell.m in Sources */,
+				A0DF0B1A061902031C00932024D3E78B /* QBAssetsViewController.m in Sources */,
+				822DC6EC73B4E1B7A97810B573B22B61 /* QBCheckmarkView.m in Sources */,
+				116583C1EE42315B5CF61C65844D8971 /* QBImagePickerController-dummy.m in Sources */,
+				915446C07893CE652419DC5455B73B7F /* QBImagePickerController.m in Sources */,
+				38075CFD75D8236DD26DCA92F189BC7A /* QBSlomoIconView.m in Sources */,
+				D454861BF3573067423C1B577AAACE12 /* QBVideoIconView.m in Sources */,
+				8343BEA8998AF588DFF56E22418EC73B /* QBVideoIndicatorView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3811DEFC0D52D34FF678C7F398E91728 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB31253EFA14ABD12FBBCE182AA19620 /* Pods-UVLUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F2853557A005ABEC3BACD96A8FFD220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5842DD3DF291B498518E6535F11A4DE5 /* Pods-UVLTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D5955B491572B96285ABCFB9FC85675 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E82C86801535511FB5100584535C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90A778FAE26150F19ACA1F85BF9FA84B /* GONMarkup+Private.m in Sources */,
+				1780B01AF868FF5E1052D8C69AAB39D9 /* GONMarkup.m in Sources */,
+				E766392CF743B79E3B93BAB485AB49E5 /* GONMarkupAlignment.m in Sources */,
+				3BA71D852B9A5D3CF097FF870AF53EFA /* GONMarkupAnchor.m in Sources */,
+				4D752DAA83A914F6121E1E4530BBAF6A /* GONMarkupBlock.m in Sources */,
+				375F5224D29D8CB5FAA5892CB50CD373 /* GONMarkupBold.m in Sources */,
+				AB91C816A5D8E59A68C61140A162F495 /* GONMarkupColor.m in Sources */,
+				451D0C9E555C717B5CA05B5ED4AC3E4B /* GONMarkupDec.m in Sources */,
+				209D3F1CF177E46825B7475D3865F66E /* GONMarkupFont.m in Sources */,
+				5C225AA3E12661ED48FE31BA2780A92F /* GONMarkupFontTraits.m in Sources */,
+				CF59E8E54BD71D8C440E2AF088977F45 /* GONMarkupImage.m in Sources */,
+				08D8B43FB40B8A422DB056C43741E0BE /* GONMarkupInc.m in Sources */,
+				A6742E80570715B344E51553F84DB811 /* GONMarkupItalic.m in Sources */,
+				AA4A22CC28AC8F13AD58FF1AEF635D5B /* GONMarkupLineBreak.m in Sources */,
+				9F65C89D480D15E309F07F283A29D96E /* GONMarkupLineStyle.m in Sources */,
+				0399C8AC08DD8711CF7F404D7027C88B /* GONMarkupList.m in Sources */,
+				259287655B90DF3F0742FE24267CDB77 /* GONMarkupListItem.m in Sources */,
+				A523C0622A8DF1E463E8BCF47C7E39DA /* GONMarkupNamedColor.m in Sources */,
+				31BE97BFDD54F03ED7D69F87FA8D7B78 /* GONMarkupNamedFont.m in Sources */,
+				FB401560BC54BE78F4537B5AFB29F5ED /* GONMarkupParagrap.m in Sources */,
+				A4EE53104EB9708051B4F3F772F99257 /* GONMarkupParser-dummy.m in Sources */,
+				811B3132FC5D94897B4552A8D6456EC4 /* GONMarkupParser.m in Sources */,
+				093DB4198599CE468B738A2331E68BB0 /* GONMarkupParserManager.m in Sources */,
+				F66679363CE7C762539CFEBF27313640 /* GONMarkupParserUtils.m in Sources */,
+				2602196F3C612413FEB643771B3B2605 /* GONMarkupReset.m in Sources */,
+				69047BDCB150A88BB3D491A914C72E37 /* GONMarkupSimple.m in Sources */,
+				93AB071F8CE062992DCF3AA0D896CFDE /* GONMarkupTextStyle.m in Sources */,
+				65FFE8C4254AFAC0AB04231E9C27AA91 /* UIButton+GONMarkupParser.m in Sources */,
+				10820F1DF2117D2F056BB0BF0B947EB9 /* UILabel+GONMarkupParser.m in Sources */,
+				D02F0F16C1CD0C96837774278F5E35AF /* UITextField+GONMarkupParser.m in Sources */,
+				D2CE4C691DAF201970C99804DFD9B149 /* UITextView+GONMarkupParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C05A1361CF4C14EFABF2B3E7DD7C2F17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FCF7D89A5940E2E0C880CE07DA162D /* NSString+Color-dummy.m in Sources */,
+				94BB52E99502116E004655B6AFE9FA60 /* NSString+Color.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E448012961328205D9F6E1A2AFCD5D58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73B24C1049E92AAD389BB5B61CD891C /* Pods-UVL-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		368CC284245179177EB4EACB3DBFFB93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NSString+Color";
+			target = 8C26CBC67ABBE63E1991C42D5CDAE205 /* NSString+Color */;
+			targetProxy = 2132143FDC48EF37DB2E06D56D8016A4 /* PBXContainerItemProxy */;
+		};
+		63058CE193457FE73A162A2F7058809B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QBImagePickerController;
+			target = C49345AFA49B098B0384C4FA864A4868 /* QBImagePickerController */;
+			targetProxy = 85BC35F480E1DD3019B150EB781EE975 /* PBXContainerItemProxy */;
+		};
+		7227BF94C06F8DEBB14084322BCC138E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-UVL";
+			target = 1274EAC63C7555AB93F5D98C5B296538 /* Pods-UVL */;
+			targetProxy = 026C8BB8304D1A287FF56488879CC78E /* PBXContainerItemProxy */;
+		};
+		91C22740995DF54C09EC71E97EA75D71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "QBImagePickerController-QBImagePicker";
+			target = EAEBAE5C8257AED94B3BED47A0E0E3FA /* QBImagePickerController-QBImagePicker */;
+			targetProxy = 5320ADF130BC24ACE804DF5976F28716 /* PBXContainerItemProxy */;
+		};
+		B21D2D4FD3B6010FBF19126D2E72C7A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-UVL";
+			target = 1274EAC63C7555AB93F5D98C5B296538 /* Pods-UVL */;
+			targetProxy = 89C06710D26A308C9B2AF371CDF535C3 /* PBXContainerItemProxy */;
+		};
+		B61B174AC62031F4BE31B63F1706BF75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GONMarkupParser;
+			target = 0DD1DFD3AA09A39D84E4B1C455E5A93A /* GONMarkupParser */;
+			targetProxy = EC818CE87775E7079AE644B200C6036D /* PBXContainerItemProxy */;
+		};
+		D3BE09116B3D84AC348C57EAA8E705B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "NSString+Color";
+			target = 8C26CBC67ABBE63E1991C42D5CDAE205 /* NSString+Color */;
+			targetProxy = 10CA32B265BB1865A767E991364D934B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AB9E78C0ED47CAE95965B242DDA7469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB302906BC3E9B977999322D7CF2937 /* NSString+Color.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/NSString+Color/NSString+Color-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = NSString_Color;
+				PRODUCT_NAME = "NSString+Color";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30FE8C25ED05FAA772AF3E438A0EFB41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC131B2F97963E0A7D76D4E43664FF3 /* Pods-UVL.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39A8F27C7156A809A7F05CDFB0560CC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A536E13F71FA83B818554CCA4E89C0 /* Pods-UVLUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		440F9E0FE738FA8CDBA0ACB010F22363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FE7DDCAC042937D7D8FD11D5F8D6D8D /* GONMarkupParser.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/GONMarkupParser/GONMarkupParser-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = GONMarkupParser;
+				PRODUCT_NAME = GONMarkupParser;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51F0507310AF5698FBE24D62F1FB6950 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3A9D763969400F3738FC0A640B6AE82 /* QBImagePickerController.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/QBImagePickerController";
+				IBSC_MODULE = QBImagePickerController;
+				INFOPLIST_FILE = "Target Support Files/QBImagePickerController/ResourceBundle-QBImagePicker-QBImagePickerController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = QBImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6427804744C4054555383985007A0B6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		67B9D7FBC37B51FBBFC67E85ACEDF149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 890554E1E5FE0AE77DB50676AF8D89E9 /* Pods-UVLTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67D6D944570E4F6838F1861DCA09F27D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B768E40627EB3ED7312B1B439D100EEE /* QBImagePickerController.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/QBImagePickerController";
+				IBSC_MODULE = QBImagePickerController;
+				INFOPLIST_FILE = "Target Support Files/QBImagePickerController/ResourceBundle-QBImagePicker-QBImagePickerController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = QBImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		74556EDEC03158A3009CA84D67369133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C139DF7AA00F8849DB3221EDBB6F883E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5660D8CA9887E6D39A5C41BC130E8A0 /* GONMarkupParser.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/GONMarkupParser/GONMarkupParser-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = GONMarkupParser;
+				PRODUCT_NAME = GONMarkupParser;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C21EC95D925A56283EF58EB56B163150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6159910CF536399A6228E203778FB7D4 /* NSString+Color.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/NSString+Color/NSString+Color-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = NSString_Color;
+				PRODUCT_NAME = "NSString+Color";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8F3530427E7C5DC662FE88516DF7BDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B106B43598A37514135F26D500D32C8 /* Pods-UVLUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAF49E3ED2E1B846E075D464BAEDB2FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8AA218C9D25EC938C1AB75246A15EFE /* Pods-UVL.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCE87412695B5FEA84120F06B945BF98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B9B15E10842A8983322453447D185C8 /* Pods-UVLTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD6E543EC4152E8DF18DB3773CA60014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B768E40627EB3ED7312B1B439D100EEE /* QBImagePickerController.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/QBImagePickerController/QBImagePickerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = QBImagePickerController;
+				PRODUCT_NAME = QBImagePickerController;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD72DD9BBA0177D326B5FFDAC940CC19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3A9D763969400F3738FC0A640B6AE82 /* QBImagePickerController.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/QBImagePickerController/QBImagePickerController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = QBImagePickerController;
+				PRODUCT_NAME = QBImagePickerController;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0381032BB4047DBB42D4D321A45F3F79 /* Build configuration list for PBXNativeTarget "QBImagePickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD72DD9BBA0177D326B5FFDAC940CC19 /* Debug */,
+				FD6E543EC4152E8DF18DB3773CA60014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6427804744C4054555383985007A0B6C /* Debug */,
+				74556EDEC03158A3009CA84D67369133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71542C32A73DEC20882419BB7CC4A141 /* Build configuration list for PBXNativeTarget "QBImagePickerController-QBImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51F0507310AF5698FBE24D62F1FB6950 /* Debug */,
+				67D6D944570E4F6838F1861DCA09F27D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E5297BD63FA55107F587A4E1BBF89F /* Build configuration list for PBXNativeTarget "Pods-UVLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B9D7FBC37B51FBBFC67E85ACEDF149 /* Debug */,
+				FCE87412695B5FEA84120F06B945BF98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B043182C82684DB9BACF3DDA86837A92 /* Build configuration list for PBXNativeTarget "NSString+Color" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB9E78C0ED47CAE95965B242DDA7469 /* Debug */,
+				C21EC95D925A56283EF58EB56B163150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBE0D85CC238740CF0BF462E43C1727F /* Build configuration list for PBXNativeTarget "Pods-UVL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF49E3ED2E1B846E075D464BAEDB2FA /* Debug */,
+				30FE8C25ED05FAA772AF3E438A0EFB41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE697C5654B37B6F11CE3D33EE1A3F81 /* Build configuration list for PBXNativeTarget "GONMarkupParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				440F9E0FE738FA8CDBA0ACB010F22363 /* Debug */,
+				C139DF7AA00F8849DB3221EDBB6F883E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA115271606CE9254D87A7E58D31F14F /* Build configuration list for PBXNativeTarget "Pods-UVLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39A8F27C7156A809A7F05CDFB0560CC2 /* Debug */,
+				D8F3530427E7C5DC662FE88516DF7BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
