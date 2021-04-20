@@ -70,6 +70,8 @@ float progressFloat;
     self.pickerView.delegate = self;
     self.pickerView.hidden = true;
     self.pickerView.backgroundColor = [UIColor whiteColor];
+    
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -145,8 +147,6 @@ float progressFloat;
         [self presentViewController:imagePickerController animated:YES completion:^{}];
     }
 }
-
-
 
 
 #pragma mark Multi image delegate
@@ -578,21 +578,22 @@ float progressFloat;
 
 -(void)getDailyDefect
 {
-    serviceParams = [NSMutableDictionary dictionary];
     NSString *dID = (NSString *)
     [[NSUserDefaults standardUserDefaults]objectForKey:DriverID];
     NSString *dApikey = (NSString *)
     [[NSUserDefaults standardUserDefaults]objectForKey:APiKEY];
     
-    NSString *defectID = (NSString *)[[NSUserDefaults standardUserDefaults]objectForKey:@"defect_id"];
+    serviceParams = [NSMutableDictionary dictionary];
+    [serviceParams setValue:GET_DAILY_DEFECT forKey:@"request"];
+    [serviceParams setValue:dID forKey:@"driver_id"];
+    [serviceParams setValue:dApikey forKey:@"driver_api_key"];
     
+    NSString *defectID = [[NSUserDefaults standardUserDefaults]objectForKey:@"defect_id"];
     if (defectID != nil && ![defectID isEqualToString:@""])
     {
         [serviceParams setValue:defectID forKey:@"defect_id"];
     }
     
-    [serviceParams setValue:dID forKey:@"driver_id"];
-    [serviceParams setValue:dApikey forKey:@"driver_api_key"];
     [self makeServerCall];
 }
 
@@ -664,7 +665,15 @@ float progressFloat;
         [serviceParams setValue:@"" forKey:@"vehicle_id"];
         [serviceParams setValue:checksDict forKey:@"daily_checks"];
         [serviceParams setValue:self.txtView.text forKey:@"defect_notes"];
-        [serviceParams setValue:@"" forKey:@"shift_id"];
+        NSString *shiftId = [[NSUserDefaults standardUserDefaults] objectForKey:@"shift_id"];
+        if (shiftId != nil && ![shiftId isEqualToString:@""])
+        {
+            [serviceParams setValue:shiftId forKey:@"shift_id"];
+        }
+        else
+        {
+            [serviceParams setValue:@"" forKey:@"shift_id"];
+        }
         [serviceParams setValue:self.Tyre1 forKey:@"tyre1"];
         [serviceParams setValue:self.Tyre2 forKey:@"tyre2"];
         [serviceParams setValue:self.Tyre3 forKey:@"tyre3"];
@@ -722,8 +731,15 @@ float progressFloat;
                                     style:UIAlertActionStyleCancel
                                     handler:^(UIAlertAction * action)
                                     {
-            [self.navigationController popViewControllerAnimated:TRUE];
-            
+            NSString *shiftId = [[NSUserDefaults standardUserDefaults] objectForKey:@"shift_id"];
+            if (shiftId != nil && ![shiftId isEqualToString:@""])
+            {
+                [self.navigationController popViewControllerAnimated:TRUE];
+            }
+            else
+            {
+                [self.tabBarController setSelectedIndex:0];
+            }
         }];
         [alert addAction:yesButton];
         [self presentViewController:alert animated:YES completion:nil];

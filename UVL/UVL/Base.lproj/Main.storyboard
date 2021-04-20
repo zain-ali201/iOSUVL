@@ -2673,7 +2673,7 @@
                                                             <action selector="otherWorkAction:" destination="veh-bg-W1f" eventType="touchUpInside" id="iEs-xV-uvZ"/>
                                                         </connections>
                                                     </switch>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6h-uP-P8W">
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6h-uP-P8W">
                                                         <rect key="frame" x="16" y="139" width="375" height="42"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                         <color key="backgroundColor" red="0.46934145690000001" green="0.73772519830000005" blue="0.3566523492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2811,6 +2811,7 @@
                     <connections>
                         <outlet property="availableSwitch" destination="Dsf-9e-0cX" id="6pZ-ib-7cV"/>
                         <outlet property="breakSwrich" destination="NdL-aq-k15" id="rCz-kx-tB1"/>
+                        <outlet property="defectBtn" destination="p6h-uP-P8W" id="bau-J3-yAb"/>
                         <outlet property="otherWorkSwitch" destination="h5H-jV-Kec" id="apc-8U-ciG"/>
                     </connections>
                 </viewController>
@@ -3058,7 +3059,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="g5o-Gs-DKC"/>
+        <segue reference="7WN-Ya-QkY"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>

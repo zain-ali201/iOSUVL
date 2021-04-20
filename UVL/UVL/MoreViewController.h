@@ -11,6 +11,7 @@
 
 @interface MoreViewController : UIViewController<VehicleOptionViewControllerDelegate>{
     VehicleOptionViewController *voptions;
+    IBOutlet UIButton *defectBtn;
 }
 
 typedef enum BreakTimeSlot : NSUInteger {

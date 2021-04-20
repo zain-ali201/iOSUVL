@@ -65,6 +65,13 @@
      addObserver:self selector:@selector(triggerAction:) name:@"BreakEnd" object:nil];
     
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    
+    NSString *defectID = (NSString *)[[NSUserDefaults standardUserDefaults]objectForKey:@"defect_id"];
+    
+    if (defectID != nil && ![defectID isEqualToString:@""])
+    {
+        [defectBtn setEnabled:TRUE];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -155,6 +162,7 @@
 {
     DefectViewController* defectVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"DefectViewController"];
     [self.navigationController pushViewController:defectVC animated:TRUE];
+
 }
 
 -(void)makeServerCall{

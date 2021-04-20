@@ -39,7 +39,7 @@
 #define ON_BREAK @"on-break-or-available"
 #define ADD_PHOTO @"upload-vehicle-photo"
 #define GET_PHOTO @"get-vehicle-photo"
-#define  GET_MORE_STATUS @"get-more-screen-status"
+#define GET_MORE_STATUS @"get-more-screen-status"
 #define DELETE_VEHICLE_PHOTO @"delete-vehicle-photo"
 #define GET_DAILY_DEFECT @"get-daily-defect-check"
 #define CREATE_DEFECT @"create-defect-report"

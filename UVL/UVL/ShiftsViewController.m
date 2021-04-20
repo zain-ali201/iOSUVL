@@ -27,6 +27,7 @@
 #import "SVProgressHUD.h"
 #import "MoreViewController.h"
 #import "AppDelegate.h"
+#import "DefectViewController.h"
 
 @import UserNotifications;
 @interface ShiftsViewController ()
@@ -39,7 +40,7 @@
     NSMutableArray *checkForBoxes;
     NSMutableArray  *vehicleValues;
     NSString *odometerReading;
-    NSString *defectTicketNumber;
+//    NSString *defectTicketNumber;
     NSString *endOdometer;
     NSString *cashIncome;
     NSString *driverLocation;
@@ -227,7 +228,7 @@ NSTimer *timer2;
 
 -(void)initContent{
     sectionsArray = [[NSMutableArray alloc] initWithObjects:@"Your assigned vehicle",@"Declarations",@"",nil];
-    truckProperties = @[@"Make",@"Model",@"Reg or Chassis No.",@"Fuel Amount",@"Defect Ticket No.",@"Start Odometer"];
+    truckProperties = @[@"Make",@"Model",@"Reg or Chassis No.",@"Fuel Amount"/*,@"Defect Ticket No."*/,@"Start Odometer"];
     declerations = @[@"You are fit for work and not under drug / alcohol influence",@"You are carrying your valid license for the vehicle type you are driving",@"You are carrying your valid DCPC card with you",@"You are carrying you valid Digi Card (if applicable)",@"You are wearing the correct PPE",@"You agree to our terms and conditions"];
     checkForBoxes = [[NSMutableArray alloc] initWithObjects:@1,@1,@1,@1,@1,@1, nil];
     vehicleValues = [[NSMutableArray alloc] init];
@@ -554,7 +555,6 @@ NSTimer *timer2;
                     cashIncome = @"";
                     
                     [sectionsArray replaceObjectAtIndex:1 withObject:@"End of Shift"];
-//                    [self.tabBarController setSelectedIndex:0];
                 }
                 
                 if(clockedOut)
@@ -571,6 +571,11 @@ NSTimer *timer2;
                 }
                 
                 NSString *shiftId = [driverData objectForKey:@"shift_id"];
+                if (shiftId != nil && ![shiftId isEqualToString:@""])
+                {
+                    [[NSUserDefaults standardUserDefaults] setValue:shiftId forKey:@"shiftId"];
+                }
+                
                 [UVLAppglobals sharedAppGlobals].shiftId = shiftId;
                 NSString *make = [driverData objectForKey:@"vehicle_make"];
                 [vehicleValues addObject:make];
@@ -580,13 +585,14 @@ NSTimer *timer2;
                 [vehicleValues addObject:make];
                 make = [driverData objectForKey:@"fuel_amount"];
                 [vehicleValues addObject:make];
-                make = [driverData objectForKey:@"defect_ticket_number"];
-                [vehicleValues addObject:make];
                 
-                if (![make isEqualToString:@""])
-                {
-                    defectTicketNumber = [make mutableCopy];
-                }
+//                make = [driverData objectForKey:@"defect_ticket_number"];
+//                [vehicleValues addObject:make];
+                
+//                if (![make isEqualToString:@""])
+//                {
+//                    defectTicketNumber = [make mutableCopy];
+//                }
                 [_tblView reloadData];
             }
         }
@@ -595,7 +601,7 @@ NSTimer *timer2;
             if (clockedOut)
             {
                 [sectionsArray replaceObjectAtIndex:1 withObject:@"Declarations"];
-                defectTicketNumber = @"";
+//                defectTicketNumber = @"";
                 odometerReading = @"";
                 cashIncome = @"";
                 endOdometer = @"";
@@ -721,27 +727,31 @@ NSTimer *timer2;
     return sectionsCount;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     if(tableView.tag == 1)
     {
         return _jobDetails.count;
     }
-    else{
-        
-        if(section == 0){
-            return 6;
+    else
+    {
+        if(section == 0)
+        {
+            return truckProperties.count;
         }
-        else if(section == 1 && [[sectionsArray objectAtIndex:section] isEqualToString:@"Declarations"]){
+        else if(section == 1 && [[sectionsArray objectAtIndex:section] isEqualToString:@"Declarations"])
+        {
             return 7;
         }
-        else if (section == 1 && [[sectionsArray objectAtIndex:section] isEqualToString:@"End of Shift"]){
+        else if (section == 1 && [[sectionsArray objectAtIndex:section] isEqualToString:@"End of Shift"])
+        {
             return 3;
         }
-        else{
+        else
+        {
             return 1;
         }
     }
-    
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -821,23 +831,23 @@ NSTimer *timer2;
     {
         TruckInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:prop];
         cell.propertyLbl.text = [truckProperties objectAtIndex:indexPath.row];
-        if(vehicleValues.count > 0 && indexPath.row != 5){
+        if(vehicleValues.count > 0 && indexPath.row != 4){
             cell.details.text = [vehicleValues objectAtIndex:indexPath.row];
             cell.Odometer.hidden = YES;
         }
+//        if(indexPath.row == 4 && isClockinRq){
+//            //for defect Ticket
+//            cell.Odometer.tag = 199;
+//            cell.Odometer.hidden = NO;
+//            cell.details.hidden = YES;
+//            cell.Odometer.text = defectTicketNumber;
+//            cell.Odometer.enabled = YES;
+//            if(!_isHideKeyboard) {
+//                [cell.Odometer performSelector:@selector(becomeFirstResponder) withObject:nil afterDelay:0];
+//            }
+//            _isHideKeyboard = NO;
+//        }
         if(indexPath.row == 4 && isClockinRq){
-            //for defect Ticket
-            cell.Odometer.tag = 199;
-            cell.Odometer.hidden = NO;
-            cell.details.hidden = YES;
-            cell.Odometer.text = defectTicketNumber;
-            cell.Odometer.enabled = YES;
-            if(!_isHideKeyboard) {
-                [cell.Odometer performSelector:@selector(becomeFirstResponder) withObject:nil afterDelay:0];
-            }
-            _isHideKeyboard = NO;
-        }
-        if(indexPath.row == 5 && isClockinRq){
             cell.Odometer.tag = 200;
             cell.Odometer.hidden = NO;
             cell.details.hidden = YES;
@@ -845,19 +855,19 @@ NSTimer *timer2;
             cell.Odometer.enabled = YES;
             //                        [cell.Odometer becomeFirstResponder]   ;
         }
-        else if(!isClockinRq && indexPath.row == 5){
+        else if(!isClockinRq && indexPath.row == 4){
             cell.Odometer.hidden = YES;
             cell.details.hidden = NO;
             cell.details.text = odometerReading;
             cell.Odometer.enabled = NO;
             
         }
-        else if(!isClockinRq && indexPath.row == 4){
-            cell.Odometer.hidden = NO;
-            cell.Odometer.text = defectTicketNumber;
-            cell.Odometer.enabled = NO;
-            
-        }
+//        else if(!isClockinRq && indexPath.row == 4){
+//            cell.Odometer.hidden = NO;
+//            cell.Odometer.text = defectTicketNumber;
+//            cell.Odometer.enabled = NO;
+//
+//        }
         UIToolbar *ViewForDoneButtonOnKeyboard = [[UIToolbar alloc] init];
         [ViewForDoneButtonOnKeyboard sizeToFit];
         UIBarButtonItem *btnDoneOnKeyboard = [[UIBarButtonItem alloc] initWithTitle:@"Done"
@@ -1044,7 +1054,7 @@ NSTimer *timer2;
             }
         }
         
-        if(odometerReading.length > 0  && defectTicketNumber.length > 0 && [odometerReading intValue] > 0){
+        if(odometerReading.length > 0  /*&& defectTicketNumber.length > 0*/ && [odometerReading intValue] > 0){
             if(declarationAccepted) {
                 serviceParams = [[NSMutableDictionary alloc] init];
                 [serviceParams setValue:SHIFT_START forKey:@"request"];
@@ -1052,7 +1062,7 @@ NSTimer *timer2;
                 [serviceParams setValue:dID forKey:@"driver_id"];
                 [serviceParams setValue:sId forKey:@"shift_id"];
                 
-                [serviceParams setValue:defectTicketNumber forKey:@"defect_ticket_no"];
+//                [serviceParams setValue:defectTicketNumber forKey:@"defect_ticket_no"];
                 
                 [serviceParams setValue:[Utils getTodayDateWithoutTime] forKey:@"date_start"];
                 if(driverLocation.length > 0){
@@ -1075,13 +1085,17 @@ NSTimer *timer2;
             } else {
                 [self showAlertView:nil message:@"Please Confirm All Declarations"];
             }
-        }else{
-            if([odometerReading intValue] < 0 || [odometerReading isEqualToString:@""]){
+        }
+        else
+        {
+            if([odometerReading intValue] < 0 || [odometerReading isEqualToString:@""])
+            {
                 [self showAlertView:nil message:@"Enter Odometer Reading"];
             }
-            else if(defectTicketNumber.length < 1 || [defectTicketNumber isEqualToString:@""]){
-                [self showAlertView:nil message:@"Enter defect ticket number"];
-            }
+//            else if(defectTicketNumber.length < 1 || [defectTicketNumber isEqualToString:@""])
+//            {
+//                [self showAlertView:nil message:@"Enter defect ticket number"];
+//            }
         }
         
     }
@@ -1094,10 +1108,12 @@ NSTimer *timer2;
             [serviceParams setValue:dID forKey:@"driver_id"];
             [serviceParams setValue:sId forKey:@"shift_id"];
             [serviceParams setValue:[Utils getTodayDateWithoutTime] forKey:@"date_end"];
-            if(driverLocation.length > 0){
+            if(driverLocation.length > 0)
+            {
                 [serviceParams setValue:driverLocation forKey:@"date_end_location"];
             }
-            else{
+            else
+            {
                 [serviceParams setValue:@"Couldn't get Driver's Location!" forKey:@"date_end_location"];
             }
             [serviceParams setValue:cashIncome forKey:@"cash_income"];
@@ -1115,22 +1131,33 @@ NSTimer *timer2;
     }
 }
 
--(void)clockinCall{
-    
+-(void)clockinCall
+{
     [ApiManager getRequest:serviceParams success:^(id result){
         [sectionsArray replaceObjectAtIndex:1 withObject:@"End of Shift"];
         [self.tblView reloadData];
         int flag = [[result objectForKey:@"flag"] intValue];
-        if(flag){
-//            [UVLAppglobals sharedAppGlobals].isClockedIn = isClockinRq;
+        if(flag)
+        {
             isClockinRq = NO;
             [UVLAppglobals sharedAppGlobals].isClockedIn = YES;
             [UVLAppglobals sharedAppGlobals].homeRefreshCall = YES;
             [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"shiftStatus"];
-            [self.tabBarController setSelectedIndex:0];
+            
+            NSString *shiftId = [result objectForKey:@"shift_id"];
+            if (shiftId != nil && ![shiftId isEqualToString:@""])
+            {
+                [[NSUserDefaults standardUserDefaults] setValue:shiftId forKey:@"shiftId"];
+                DefectViewController* defectVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"DefectViewController"];
+                [self.navigationController pushViewController:defectVC animated:TRUE];
+            }
+            else
+            {
+                [self.tabBarController setSelectedIndex:0];
+            }
         }
     }failure:^(NSError *error) {
-        
+
     }];
 }
 
@@ -1213,10 +1240,11 @@ shouldChangeCharactersInRange:(NSRange)range
         UITextField *field = (UITextField *)[self.tblView viewWithTag:200];
         odometerReading = field.text;
     }
-    else if(textField.tag == 199){
-        UITextField *field = (UITextField *)[self.tblView viewWithTag:199];
-        defectTicketNumber = field.text;
-    }
+//    else if(textField.tag == 199)
+//    {
+//        UITextField *field = (UITextField *)[self.tblView viewWithTag:199];
+//        defectTicketNumber = field.text;
+//    }
 }
 
 #pragma mark TEXTVIEW DELEGATES
