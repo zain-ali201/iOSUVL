@@ -733,9 +733,9 @@ float progressFloat;
         [SVProgressHUD dismiss];
         NSDictionary *tempDict = (NSDictionary *)responseObject;
         NSLog(@"Response: %@", tempDict);
-        NSLog(@"defectID: %@", [tempDict valueForKey:@"defect_id"]);
+        NSLog(@"defectID: %@", [tempDict valueForKey:@"defect_ticket_number"]);
         
-        [[NSUserDefaults standardUserDefaults] setValue:[tempDict valueForKey:@"defect_id"] forKey:@"defect_id"];
+        
         
         UIAlertController * alert= [UIAlertController
                                     alertControllerWithTitle:@""
@@ -746,13 +746,15 @@ float progressFloat;
                                     style:UIAlertActionStyleCancel
                                     handler:^(UIAlertAction * action)
                                     {
-            NSString *shiftId = [[NSUserDefaults standardUserDefaults] objectForKey:@"shift_id"];
-            if (shiftId != nil && ![shiftId isEqualToString:@""])
+            
+            NSString *defectID = [[NSUserDefaults standardUserDefaults]objectForKey:@"defect_id"];
+            if (defectID != nil && ![defectID isEqualToString:@""])
             {
                 [self.navigationController popViewControllerAnimated:TRUE];
             }
             else
             {
+                [[NSUserDefaults standardUserDefaults] setValue:[tempDict valueForKey:@"defect_ticket_number"] forKey:@"defect_id"];
                 [self.tabBarController setSelectedIndex:0];
             }
         }];

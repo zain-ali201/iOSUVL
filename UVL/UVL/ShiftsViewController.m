@@ -517,6 +517,7 @@ NSTimer *timer2;
                     if([driverData valueForKey:@"shift_start_date_text"]){
                         shiftStartDate = [driverData objectForKey:@"shift_start_date_text"];
                     }
+                    [[NSUserDefaults standardUserDefaults] setValue:[driverData objectForKey:@"vehicle_id"] forKey:@"vehicle_id"];
                     NSString *vehicleMake = [driverData objectForKey:@"vehicle_make"];
                     NSString *vehicleModel = [driverData objectForKey:@"vehicle_model"];
                     NSString *vehicleReg = [driverData objectForKey:@"vehicle_reg"];
@@ -1147,9 +1148,9 @@ NSTimer *timer2;
             NSString *shiftId = [result objectForKey:@"shift_id"];
             if (shiftId != nil && ![shiftId isEqualToString:@""])
             {
+                [[NSUserDefaults standardUserDefaults] setValue:@"" forKey:@"defect_id"];
                 NSLog(@"shiftId: %@", shiftId);
                 [[NSUserDefaults standardUserDefaults] setValue:shiftId forKey:@"shift_id"];
-                [[NSUserDefaults standardUserDefaults] setValue:shiftId forKey:@"vehicle_id"];
                 DefectViewController* defectVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"DefectViewController"];
                 [self.navigationController pushViewController:defectVC animated:TRUE];
             }

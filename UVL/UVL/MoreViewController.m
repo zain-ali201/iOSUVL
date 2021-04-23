@@ -55,7 +55,6 @@
 
         }
     }
-    
 }
 
 - (void)viewDidLoad
@@ -66,13 +65,6 @@
      addObserver:self selector:@selector(triggerAction:) name:@"BreakEnd" object:nil];
     
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
-    
-    NSString *defectID = [[NSUserDefaults standardUserDefaults]objectForKey:@"defect_id"];
-    NSLog(@"defectID: %@", defectID);
-    if (defectID != nil && ![defectID isEqualToString:@""])
-    {
-        [defectBtn setEnabled:TRUE];
-    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -161,8 +153,18 @@
 
 -(IBAction)defectBtnAction:(id)sender
 {
-    DefectViewController* defectVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"DefectViewController"];
-    [self.navigationController pushViewController:defectVC animated:TRUE];
+    NSString *defectID = [[NSUserDefaults standardUserDefaults]objectForKey:@"defect_id"];
+    NSLog(@"defectID: %@", defectID);
+    if (defectID != nil && ![defectID isEqualToString:@""])
+    {
+        DefectViewController* defectVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"DefectViewController"];
+        [self.navigationController pushViewController:defectVC animated:TRUE];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"Please create defect report." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+    }
 
 }
 
