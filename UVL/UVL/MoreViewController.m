@@ -58,7 +58,8 @@
     
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [[NSNotificationCenter defaultCenter]
@@ -66,8 +67,8 @@
     
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     
-    NSString *defectID = (NSString *)[[NSUserDefaults standardUserDefaults]objectForKey:@"defect_id"];
-    
+    NSString *defectID = [[NSUserDefaults standardUserDefaults]objectForKey:@"defect_id"];
+    NSLog(@"defectID: %@", defectID);
     if (defectID != nil && ![defectID isEqualToString:@""])
     {
         [defectBtn setEnabled:TRUE];

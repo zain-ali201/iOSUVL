@@ -1147,7 +1147,9 @@ NSTimer *timer2;
             NSString *shiftId = [result objectForKey:@"shift_id"];
             if (shiftId != nil && ![shiftId isEqualToString:@""])
             {
-                [[NSUserDefaults standardUserDefaults] setValue:shiftId forKey:@"shiftId"];
+                NSLog(@"shiftId: %@", shiftId);
+                [[NSUserDefaults standardUserDefaults] setValue:shiftId forKey:@"shift_id"];
+                [[NSUserDefaults standardUserDefaults] setValue:shiftId forKey:@"vehicle_id"];
                 DefectViewController* defectVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"DefectViewController"];
                 [self.navigationController pushViewController:defectVC animated:TRUE];
             }

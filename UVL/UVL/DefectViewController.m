@@ -44,7 +44,9 @@
     float progressFloat;
     
     BOOL notesFlag;
+    NSString *msg;
 }
+
 @property (strong, nonatomic)NSMutableArray<DailyDefectCheck*>*DefectDataArray;
 @property(nonatomic, strong) NSData* shopImageData;
 @end
@@ -647,22 +649,23 @@ float progressFloat;
             [checksDict setObject:str forKey:str];
         }
         
-        NSString *defectID = (NSString *)[[NSUserDefaults standardUserDefaults]objectForKey:@"defect_id"];
+        NSString *defectID = [[NSUserDefaults standardUserDefaults]objectForKey:@"defect_id"];
         
         if (defectID != nil && ![defectID isEqualToString:@""])
         {
             [serviceParams setValue:defectID forKey:@"defect_id"];
             [serviceParams setValue:UPDATE_DEFECT forKey:@"request"];
+            msg = @"Defect updated successfully.";
         }
         else
         {
             [serviceParams setValue:@"add" forKey:@"defect_id"];
             [serviceParams setValue:CREATE_DEFECT forKey:@"request"];
+            msg = @"Defect added successfully.";
         }
         
         [serviceParams setValue:dID forKey:@"driver_id"];
         [serviceParams setValue:dApikey forKey:@"driver_api_key"];
-        [serviceParams setValue:@"" forKey:@"vehicle_id"];
         [serviceParams setValue:checksDict forKey:@"daily_checks"];
         [serviceParams setValue:self.txtView.text forKey:@"defect_notes"];
         NSString *shiftId = [[NSUserDefaults standardUserDefaults] objectForKey:@"shift_id"];
@@ -674,6 +677,17 @@ float progressFloat;
         {
             [serviceParams setValue:@"" forKey:@"shift_id"];
         }
+        
+        NSString *vehicleID = [[NSUserDefaults standardUserDefaults] objectForKey:@"vehicle_id"];
+        if (vehicleID != nil && ![vehicleID isEqualToString:@""])
+        {
+            [serviceParams setValue:vehicleID forKey:@"vehicle_id"];
+        }
+        else
+        {
+            [serviceParams setValue:@"" forKey:@"vehicle_id"];
+        }
+        
         [serviceParams setValue:self.Tyre1 forKey:@"tyre1"];
         [serviceParams setValue:self.Tyre2 forKey:@"tyre2"];
         [serviceParams setValue:self.Tyre3 forKey:@"tyre3"];
@@ -719,12 +733,13 @@ float progressFloat;
         [SVProgressHUD dismiss];
         NSDictionary *tempDict = (NSDictionary *)responseObject;
         NSLog(@"Response: %@", tempDict);
+        NSLog(@"defectID: %@", [tempDict valueForKey:@"defect_id"]);
         
-        [[NSUserDefaults standardUserDefaults] setObject:[tempDict valueForKey:@"defect_id"] forKey:@"defect_id"];
+        [[NSUserDefaults standardUserDefaults] setValue:[tempDict valueForKey:@"defect_id"] forKey:@"defect_id"];
         
         UIAlertController * alert= [UIAlertController
                                     alertControllerWithTitle:@""
-                                    message:@"Defect added successfully."
+                                    message:msg
                                     preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* yesButton = [UIAlertAction
                                     actionWithTitle:@"OK"
