@@ -153,7 +153,7 @@
 
 -(IBAction)defectBtnAction:(id)sender
 {
-    NSString *defectID = [[NSUserDefaults standardUserDefaults]objectForKey:@"defect_id"];
+    NSString *defectID = [[NSUserDefaults standardUserDefaults]stringForKey:@"defect_id"];
     NSLog(@"defectID: %@", defectID);
     if (defectID != nil && ![defectID isEqualToString:@""])
     {

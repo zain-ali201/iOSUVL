@@ -754,7 +754,8 @@ float progressFloat;
             }
             else
             {
-                [[NSUserDefaults standardUserDefaults] setValue:[tempDict valueForKey:@"defect_ticket_number"] forKey:@"defect_id"];
+                NSString *defectID = [NSString stringWithFormat:@"%@",[tempDict valueForKey:@"defect_ticket_number"]];
+                [[NSUserDefaults standardUserDefaults] setValue:defectID forKey:@"defect_id"];
                 [self.tabBarController setSelectedIndex:0];
             }
         }];
