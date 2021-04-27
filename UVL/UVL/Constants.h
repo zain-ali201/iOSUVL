@@ -42,6 +42,7 @@
 #define GET_MORE_STATUS @"get-more-screen-status"
 #define DELETE_VEHICLE_PHOTO @"delete-vehicle-photo"
 #define GET_DAILY_DEFECT @"get-daily-defect-check"
+#define GET_EXISTED_DEFECT @"get-defect-report"
 #define CREATE_DEFECT @"create-defect-report"
 #define UPDATE_DEFECT @"update-defect-report"
 

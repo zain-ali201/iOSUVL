@@ -485,10 +485,9 @@ float progressFloat;
 {
     //     TyreTableCell *cell =  [self.tyreTblView dequeueReusableCellWithIdentifier:@"TyreTableCell"];
     // cell.tyreLbl.text = self.tyreItemArray[row];
-    
-    
     return self.tyresData[row];
 }
+
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
@@ -576,8 +575,6 @@ float progressFloat;
 
 
 //--------------------------- WEB SERVICES --------------------------//
-
-
 -(void)getDailyDefect
 {
     NSString *dID = (NSString *)
@@ -586,7 +583,7 @@ float progressFloat;
     [[NSUserDefaults standardUserDefaults]objectForKey:APiKEY];
     
     serviceParams = [NSMutableDictionary dictionary];
-    [serviceParams setValue:GET_DAILY_DEFECT forKey:@"request"];
+    
     [serviceParams setValue:dID forKey:@"driver_id"];
     [serviceParams setValue:dApikey forKey:@"driver_api_key"];
     
@@ -594,17 +591,23 @@ float progressFloat;
     if (defectID != nil && ![defectID isEqualToString:@""])
     {
         [serviceParams setValue:defectID forKey:@"defect_id"];
+        [serviceParams setValue:GET_EXISTED_DEFECT forKey:@"request"];
     }
-    
+    else
+    {
+        [serviceParams setValue:GET_DAILY_DEFECT forKey:@"request"];
+    }
+    NSLog(@"%@", serviceParams);
     [self makeServerCall];
 }
 
-
--(void)makeServerCall{
+-(void)makeServerCall
+{
     [ApiManager postRequest:serviceParams success:^(id result){
         if([result objectForKey:@"error"] == nil){
-            if (self.isApiCreat){}else{
-                
+            if (self.isApiCreat){}
+            else
+            {
                 NSArray *DefectDetails   = [result objectForKey:@"check_options"];
                 self.tyresData = (NSDictionary *)[result objectForKey:@"tyre_options"];
                 if([DefectDetails count] > 0){
@@ -734,8 +737,6 @@ float progressFloat;
         NSDictionary *tempDict = (NSDictionary *)responseObject;
         NSLog(@"Response: %@", tempDict);
         NSLog(@"defectID: %@", [tempDict valueForKey:@"defect_ticket_number"]);
-        
-        
         
         UIAlertController * alert= [UIAlertController
                                     alertControllerWithTitle:@""
