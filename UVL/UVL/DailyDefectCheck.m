@@ -14,10 +14,9 @@
 {
     if (self = [super init])
     {
-
         self.defectKey = DailyDefectData[@"defect_key"];
         self.defectName = DailyDefectData[@"defect_name"];
-        
+        self.defectValue = DailyDefectData[@"defect_value"];
     }
     return self;
     

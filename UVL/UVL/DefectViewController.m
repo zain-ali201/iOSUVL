@@ -368,9 +368,13 @@ float progressFloat;
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (tableView == self.tblView){
+    
+    if (tableView == self.tblView)
+    {
         return self.DefectDataArray.count;
-    }else{
+    }
+    else
+    {
         if (section == 0)
         {
             return _tyreArray1.count;
@@ -395,6 +399,11 @@ float progressFloat;
         DailyDefectCheck *DefectData = [self.DefectDataArray objectAtIndex:indexPath.row];
         cell.defectDataLbl.text = DefectData.defectName;
         cell.switcher.tag = indexPath.row;
+        if ([DefectData.defectValue isEqual: @"1"])
+        {
+            [cell.switcher setOn:TRUE];
+            [self.defectChecksArray addObject:DefectData.defectKey];
+        }
         [cell.switcher addTarget:self action:@selector(didTapButton:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     }
@@ -405,14 +414,48 @@ float progressFloat;
         if (indexPath.section == 0)
         {
             cell.tyreLbl.text = self.tyreArray1[indexPath.row];
+            if (indexPath.row == 0 && ![self.Tyre1 isEqual:@""])
+            {
+                cell.tyreLbl.text = self.Tyre1;
+            }
+            else if (indexPath.row == 1 && ![self.Tyre2 isEqual:@""])
+            {
+                cell.tyreLbl.text = self.Tyre2;
+            }
         }
         else if (indexPath.section == 1)
         {
             cell.tyreLbl.text = self.tyreArray2[indexPath.row];
+            
+            if (indexPath.row == 0 && ![self.Tyre3 isEqual:@""])
+            {
+                cell.tyreLbl.text = self.Tyre3;
+            }
+            else if (indexPath.row == 1 && ![self.Tyre4 isEqual:@""])
+            {
+                cell.tyreLbl.text = self.Tyre4;
+            }
         }
         else
         {
             cell.tyreLbl.text = self.tyreArray3[indexPath.row];
+            
+            if (indexPath.row == 0 && ![self.Tyre5 isEqual:@""])
+            {
+                cell.tyreLbl.text = self.Tyre5;
+            }
+            else if (indexPath.row == 1 && ![self.Tyre6 isEqual:@""])
+            {
+                cell.tyreLbl.text = self.Tyre6;
+            }
+            else if (indexPath.row == 2 && ![self.Tyre7 isEqual:@""])
+            {
+                cell.tyreLbl.text = self.Tyre7;
+            }
+            else if (indexPath.row == 3 && ![self.Tyre8 isEqual:@""])
+            {
+                cell.tyreLbl.text = self.Tyre8;
+            }
         }
         return cell;
     }
@@ -428,7 +471,8 @@ float progressFloat;
 
 - (void)didTapButton:(UISwitch*)sender {
     
-    if(sender.isOn){
+    if(sender.isOn)
+    {
         NSString *check = self.DefectDataArray[sender.tag].defectKey;
         [self.defectChecksArray addObject:check];
         
@@ -447,7 +491,6 @@ float progressFloat;
             self.isTyreSelect = NO;
             self.tyreView.hidden = true;
             self.tyreViewHeight.constant = 0;
-            
         }
     }
 }
@@ -560,11 +603,12 @@ float progressFloat;
         valid = NO;
         message = @"Please enter Defect Notes";
     }
-    else if (self.txtView.text.length <= 0 && notesFlag == TRUE)
+    else if (totalImages.count == 0)
     {
         valid = NO;
         message = @"Please attach atleast one image";
     }
+    
     
     if (!valid) {
         [self showAlertView:nil message:message];
@@ -608,7 +652,7 @@ float progressFloat;
             if (self.isApiCreat){}
             else
             {
-                NSArray *DefectDetails   = [result objectForKey:@"check_options"];
+                NSArray *DefectDetails = [result objectForKey:@"check_options"];
                 self.tyresData = (NSDictionary *)[result objectForKey:@"tyre_options"];
                 if([DefectDetails count] > 0){
                     [self.DefectDataArray removeAllObjects];
@@ -621,6 +665,25 @@ float progressFloat;
                         
                     }
                 }
+                
+                NSString *notes = [result objectForKey:@"defect_notes"];
+                
+                if (notes != nil && ![notes isEqual:@""])
+                {
+                    _txtView.text = notes;
+                    notesFlag = TRUE;
+                    self.lbl.hidden = YES;
+                }
+                
+                self.Tyre1 = [result objectForKey:@"tyre1"];
+                self.Tyre2 = [result objectForKey:@"tyre2"];
+                self.Tyre3 = [result objectForKey:@"tyre3"];
+                self.Tyre4 = [result objectForKey:@"tyre4"];
+                self.Tyre5 = [result objectForKey:@"tyre5"];
+                self.Tyre6 = [result objectForKey:@"tyre6"];
+                self.Tyre7 = [result objectForKey:@"tyre7"];
+                self.Tyre8 = [result objectForKey:@"tyre8"];
+                
                 self.tblViewHeight.constant = self.DefectDataArray.count * 42;
                 [self.tblView reloadData];
             }
@@ -636,8 +699,8 @@ float progressFloat;
 
 -(void)CreatDefectReport{
     
-    if ([self validate]) {
-        
+    if ([self validate])
+    {
         [serviceParams removeAllObjects];
         serviceParams = [NSMutableDictionary dictionary];
         NSString *dID = (NSString *)
