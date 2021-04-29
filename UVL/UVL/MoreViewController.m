@@ -155,16 +155,16 @@
 {
     NSString *defectID = [[NSUserDefaults standardUserDefaults]stringForKey:@"defect_id"];
     NSLog(@"defectID: %@", defectID);
-//    if (defectID != nil && ![defectID isEqualToString:@""])
-//    {
+    if (defectID != nil && ![defectID isEqualToString:@""])
+    {
         DefectViewController* defectVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"DefectViewController"];
         [self.navigationController pushViewController:defectVC animated:TRUE];
-//    }
-//    else
-//    {
-//        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"Please create defect report." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-//        [alert show];
-//    }
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"" message:@"Please create defect report." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+    }
 }
 
 -(void)makeServerCall{
