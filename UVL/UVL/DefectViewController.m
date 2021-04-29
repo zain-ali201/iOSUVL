@@ -413,48 +413,56 @@ float progressFloat;
         
         if (indexPath.section == 0)
         {
-            cell.tyreLbl.text = self.tyreArray1[indexPath.row];
-            if (indexPath.row == 0 && ![self.Tyre1 isEqual:@""])
+            if (indexPath.row == 0 && self.Tyre1 != nil && ![self.Tyre1 isEqualToString:@""])
             {
+                NSLog(@"self.Tyre1: %@", self.Tyre1);
                 cell.tyreLbl.text = self.Tyre1;
             }
-            else if (indexPath.row == 1 && ![self.Tyre2 isEqual:@""])
+            else if (indexPath.row == 1 && self.Tyre2 != nil  && ![self.Tyre2 isEqualToString:@""])
             {
                 cell.tyreLbl.text = self.Tyre2;
+            }
+            else
+            {
+                cell.tyreLbl.text = self.tyreArray1[indexPath.row];
             }
         }
         else if (indexPath.section == 1)
         {
-            cell.tyreLbl.text = self.tyreArray2[indexPath.row];
-            
-            if (indexPath.row == 0 && ![self.Tyre3 isEqual:@""])
+            if (indexPath.row == 0 && self.Tyre3 != nil  && ![self.Tyre3 isEqualToString:@""])
             {
                 cell.tyreLbl.text = self.Tyre3;
             }
-            else if (indexPath.row == 1 && ![self.Tyre4 isEqual:@""])
+            else if (indexPath.row == 1 && self.Tyre4 != nil  && ![self.Tyre4 isEqualToString:@""])
             {
                 cell.tyreLbl.text = self.Tyre4;
             }
+            else
+            {
+                cell.tyreLbl.text = self.tyreArray2[indexPath.row];
+            }
         }
-        else
+        else if (indexPath.section == 2)
         {
-            cell.tyreLbl.text = self.tyreArray3[indexPath.row];
-            
-            if (indexPath.row == 0 && ![self.Tyre5 isEqual:@""])
+            if (indexPath.row == 0 && self.Tyre5 != nil  && ![self.Tyre5 isEqualToString:@""])
             {
                 cell.tyreLbl.text = self.Tyre5;
             }
-            else if (indexPath.row == 1 && ![self.Tyre6 isEqual:@""])
+            else if (indexPath.row == 1 && self.Tyre6 != nil  && ![self.Tyre6 isEqualToString:@""])
             {
                 cell.tyreLbl.text = self.Tyre6;
             }
-            else if (indexPath.row == 2 && ![self.Tyre7 isEqual:@""])
+            else if (indexPath.row == 2 && self.Tyre7 != nil  && ![self.Tyre7 isEqualToString:@""])
             {
                 cell.tyreLbl.text = self.Tyre7;
             }
-            else if (indexPath.row == 3 && ![self.Tyre8 isEqual:@""])
+            else if (indexPath.row == 3 && self.Tyre8 != nil  && ![self.Tyre8 isEqualToString:@""])
             {
                 cell.tyreLbl.text = self.Tyre8;
+            }
+            else
+            {
+                cell.tyreLbl.text = self.tyreArray3[indexPath.row];
             }
         }
         return cell;
@@ -539,35 +547,35 @@ float progressFloat;
     cell.tyreLbl.text = @"";
     cell.tyreLbl.text = self.tyresData[indexPath.row];
     
-    if (self.indexPathRow.row == 0)
+    if (self.indexPathRow.section == 0 && self.indexPathRow.row == 0)
     {
         self.Tyre1 = self.tyresData[row];
     }
-    else if (self.indexPathRow.row == 1)
+    else if (self.indexPathRow.section == 0 && self.indexPathRow.row == 1)
     {
         self.Tyre2 = self.tyresData[row];
     }
-    else if (self.indexPathRow.row == 2)
+    else if (self.indexPathRow.section == 1 && self.indexPathRow.row == 0)
     {
         self.Tyre3 = self.tyresData[row];
     }
-    else if (self.indexPathRow.row == 3)
+    else if (self.indexPathRow.section == 1 && self.indexPathRow.row == 1)
     {
         self.Tyre4 = self.tyresData[row];
     }
-    else if (self.indexPathRow.row == 4)
+    else if (self.indexPathRow.section == 2 && self.indexPathRow.row == 0)
     {
         self.Tyre5 = self.tyresData[row];
     }
-    else if (self.indexPathRow.row == 5)
+    else if (self.indexPathRow.section == 2 && self.indexPathRow.row == 1)
     {
         self.Tyre6 = self.tyresData[row];
     }
-    else if (self.indexPathRow.row == 6)
+    else if (self.indexPathRow.section == 2 && self.indexPathRow.row == 2)
     {
         self.Tyre7 = self.tyresData[row];
     }
-    else if (self.indexPathRow.row == 7)
+    else if (self.indexPathRow.section == 2 && self.indexPathRow.row == 3)
     {
         self.Tyre8 = self.tyresData[row];
     }
